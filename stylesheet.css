@@ -1,0 +1,230 @@
+{
+  margin: 0;
+  padding: 0;
+}
+
+/* Set default font-family and background color */
+body {
+  font-family: 'Mulish', sans-serif;
+  background-color: black;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+/* Top bar styles */
+.top-bar {
+  background-color: black;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 58px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo .name {
+  font-weight: bold;
+}
+
+.navigation-links {
+  display: flex;
+  list-style: none;
+}
+
+.navigation-links li {
+  margin-left: 20px;
+}
+
+.navigation-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Add your other CSS rules here */
+
+/* Example styles for the hero section */
+  .hero {
+    background-size: cover;
+    background-position: center;
+    min-height: 536px;
+    position: relative;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-image: url(./WRH.png); /* Fix the background image declaration */
+    box-shadow: 0px 8px 88px 4px rgba(0, 191, 240, 0.50);
+  }
+  
+
+.hero-content {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-heading {
+  color: #FFF;
+  font-family: 'Mulish', sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1;
+  margin-bottom: 10px; /* Add a small margin at the bottom of the heading */
+}
+
+#smallblue {
+  color: #00BFF0;
+}
+
+.content-container {
+  position: relative;
+  padding-top: 20px; /* Adjusted to center the image */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.content-container img {
+  max-width: inherit;
+  margin-top: -3%;
+}
+
+
+.columns-container {
+  display: flex;
+  margin-top: 20px; /* Adjusted the margin */
+  margin-left: 10%;
+}
+
+.left-column {
+  flex: 1;
+  margin-inline-end: 10%;
+}
+
+.right-column {
+  flex: 1;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 29px;
+    margin-inline-end: 18%;
+}
+.right-column {
+  flex: initial;
+  justify-content: right;
+  width: 40%;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 20;
+}
+
+
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  }
+
+.footer p {color: rgba(0, 191, 240, 9.0);
+  margin-bottom: 0px;
+}
+
+.footer-links {
+  list-style: vertical;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Media query for responsiveness */
+@media screen and (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+  }
+
+  .footer-links {
+    margin-top: 10px;
+  }
+}.content-container {
+  /* ... */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.content-container img {
+  /* ... */
+  max-width: 100%;
+  margin-top: -14%;
+}
+
+.columns-container {
+  /* ... */
+  display: flex;
+  flex-direction: column; /* Change to column layout for smaller screens */
+  align-items: center; /* Center the columns on smaller screens */
+  margin-top: 20px;
+}
+
+.left-column,
+.right-column {
+  /* ... */
+  width: 100%; /* Columns should take full width on smaller screens */
+  margin-inline: 0; /* Remove the margins on smaller screens */
+  margin-bottom: 20px; /* Add some space between the columns */
+}
+
+/* ... */
+
+/* Media query for responsiveness */
+@media screen and (min-width: 768px) {
+  .content-container {
+    /* ... */
+    justify-content: space-between; /* Revert to space-between for larger screens */
+  }
+
+  .columns-container {
+    /* ... */
+    flex-direction: row; /* Revert to row layout for larger screens */
+    align-items: flex-start; /* Align the columns at the top for larger screens */
+  }
+
+  /* ... */
+}

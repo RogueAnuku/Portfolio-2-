@@ -213,6 +213,7 @@ p {
 .content-container img {
   /* ... */
   max-width: 100%;
+  margin-top: 12%;
  
 }
 

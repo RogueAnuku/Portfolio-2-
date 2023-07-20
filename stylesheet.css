@@ -20,7 +20,7 @@ body {
 /* Top bar styles */
 .top-bar {
   background-color: black;
-  padding: 10px;
+  padding: 30px;
 }
 
 .container {
@@ -80,7 +80,7 @@ body {
 
 .hero-content {
   text-align: center;
-  color: white;
+  color: #0ac7e7;
   position: absolute;
   top: 50%; /* Center the content vertically */
   left: 50%; /* Center the content horizontally */
@@ -95,7 +95,7 @@ body {
   background-image: url("./WRH.png");
   background-size: cover; /* Make the background image cover the container */
   background-position: center; /* Center the background image horizontally and vertically */
- box-shadow: 4px 4px 41px 20px rgba(0, 191, 240, 1.0);
+ box-shadow: 4px 0px 19px 10px rgba(35 162 175);
 }
 .hero-heading {
   color: #FFF;
@@ -104,7 +104,9 @@ body {
   font-weight: 600;
   line-height: 1;
   margin-bottom: 10px;
+  margin-top: -300px;
 }
+
 
 .hero-paragraph {
   font-family: 'Mulish', sans-serif;
@@ -142,21 +144,16 @@ body {
   margin-inline-end: 10%;
 }
 
-.right-column {
-  flex: 1;
-}
-
 p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    margin-inline-start: 29px;
-    margin-inline-end: 18%;
+    margin-inline-start: 2px;
+    margin-inline-end: 20%;
 }
 .right-column {
-  flex: initial;
-  justify-content: right;
-  width: 40%;
+   width: 40%;
+   flex: 1;
 }
 
 .footer {
@@ -204,16 +201,20 @@ p {
   .footer-links {
     margin-top: 10px;
   }
-}.content-container {
+}
+.content-container {
   /* ... */
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly; margin-top: 20px;
+  margin-left: 0px
+  padding-: 30px;
+
 }
 
 .content-container img {
   /* ... */
   max-width: 100%;
-  margin-top: 12%;
+  margin-top: -15%;
  
 }
 
@@ -228,9 +229,10 @@ p {
 .left-column,
 .right-column {
   /* ... */
-  width: 100%; /* Columns should take full width on smaller screens */
+  /* Columns should take full width on smaller screens */
   margin-inline: 0; /* Remove the margins on smaller screens */
-  margin-bottom: 20px; /* Add some space between the columns */
+  margin-bottom: 0px;
+   /* Add some space between the columns */
 }
 
 /* ... */

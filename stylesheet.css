@@ -252,3 +252,43 @@ p {
 
   /* ... */
 }
+.right-column {
+  width: 40%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.image-container img {
+  width: 305px; /* Set the width to match the left image */
+  height: auto; /* Maintain the aspect ratio */
+}
+/* Add a new CSS class for the buttons */
+.button {
+  display: inline-flex;
+  padding: 15.5px 24px 15.5px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 28px;
+  background: var(--rose, #FF70A9);
+  cursor: pointer; /* Add cursor pointer to indicate interactivity */
+  color: white;
+  font-size: 16px;
+  text-decoration: none; /* Remove underline from anchor elements */
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Apply the button style to all buttons with the "button" class */
+.button-container .button {
+  /* Add margin if needed between buttons */
+  margin-right: 10px;
+}
+
+/* Change button background on hover */
+.button:hover {
+  background-color: var(--rose-hover, #FF507A);
+}

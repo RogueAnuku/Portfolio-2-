@@ -63,52 +63,73 @@ body {
 /* Add your other CSS rules here */
 
 /* Example styles for the hero section */
-  .hero {
-    background-size: cover;
-    background-position: center;
-    min-height: 536px;
-    position: relative;
-    background-repeat: no-repeat;
-    width: 100%;
-    background-image: url(./WRH.png); /* Fix the background image declaration */
-    box-shadow: 0px 8px 88px 4px rgba(0, 191, 240, 0.50);
-  }
-  
+.hero {
+  height: 30%;
+  min-height: 0; /* Remove the min-height */
+  position: relative;
+ 
+  background-color: transparent;
+  /* Set the container's aspect ratio using padding-top */
+  padding-top: 43%; /* Adjust this percentage to fit the border within the new size */
+}
+.container {
+  /* Set the container's height to match the hero section */
+  display: flex;
+  align-items: center;
+}
 
 .hero-content {
   text-align: center;
   color: white;
   position: absolute;
-  top: 20%;
-  left: 50%;
+  top: 50%; /* Center the content vertically */
+  left: 50%; /* Center the content horizontally */
   transform: translate(-50%, -50%);
+  z-index: 1; /* Ensure the text is on top of the image */
 }
-
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url("./WRH.png");
+  background-size: cover; /* Make the background image cover the container */
+  background-position: center; /* Center the background image horizontally and vertically */
+ box-shadow: 4px 4px 41px 20px rgba(0, 191, 240, 1.0);
+}
 .hero-heading {
   color: #FFF;
   font-family: 'Mulish', sans-serif;
   font-size: 60px;
   font-weight: 600;
   line-height: 1;
-  margin-bottom: 10px; /* Add a small margin at the bottom of the heading */
+  margin-bottom: 10px;
 }
 
-#smallblue {
-  color: #00BFF0;
+.hero-paragraph {
+  font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
-.content-container {
-  position: relative;
-  padding-top: 20px; /* Adjusted to center the image */
-  display: flex;
-  justify-content: space-evenly;
+/* Add your other CSS rules here */
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .hero-content {
+    /* For smaller screens, adjust the top value to keep the content centered */
+    top: 40%;
+  }
 }
 
-.content-container img {
-  max-width: inherit;
-  margin-top: -3%;
+/* Media query for even smaller screens (optional) */
+@media screen and (max-width: 480px) {
+  .hero-content {
+    /* For even smaller screens, adjust the top value further to keep the content centered */
+    top: 30%;
+  }
 }
-
 
 .columns-container {
   display: flex;
@@ -192,7 +213,7 @@ p {
 .content-container img {
   /* ... */
   max-width: 100%;
-  margin-top: -14%;
+ 
 }
 
 .columns-container {

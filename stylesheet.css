@@ -18,6 +18,9 @@ body {
 }
 
 /* Top bar styles */
+/* Add your existing CSS styles here */
+
+/* Top bar styles */
 .top-bar {
   background-color: black;
   padding: 30px;
@@ -42,6 +45,7 @@ body {
 
 .logo .name {
   font-weight: bold;
+  color: white;
 }
 
 .navigation-links {
@@ -60,6 +64,19 @@ body {
   font-weight: 600;
 }
 
+/* Add your other CSS rules here */
+
+.center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -170px;
+}
+
+.center-image img {
+  max-width: 100%;
+  height: auto;
+}
 .hero {
   height: 30%;
   min-height: 0; /* Remove the min-height */
@@ -69,12 +86,6 @@ body {
   /* Set the container's aspect ratio using padding-top */
   padding-top: 43%; /* Adjust this percentage to fit the border within the new size */
 }
-.container {
-  /* Set the container's height to match the hero section */
-  display: flex;
-  align-items: center;
-}
-
 .hero-content {
   text-align: center;
   color: #0ac7e7;
@@ -123,11 +134,11 @@ body {
 }
 
 /* Media query for even smaller screens (optional) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px)
   .hero-content {
     /* For even smaller screens, adjust the top value further to keep the content centered */
     top: 30%;
-  }
+
 
   .glass-border {
     border-width: 3px;
@@ -139,177 +150,51 @@ body {
   margin-top: -74px; margin-left: 60px;
 
 }
-
-
 }
+/* Add your existing CSS styles here */
 
+/* Separate styles for the three-column layout */
 .columns-container {
-  display: flex;
-  flex-direction: column; /* Change to column layout for smaller screens */
-  align-items: center; /* Center the columns on smaller screens */
+  width: 100%;
   margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns side by side on larger screens */
+  gap: 20px; /* Add some spacing between columns */
 }
 
+.left-right-columns {
+  display: flex;
+  gap: 20px; /* Add some spacing between left and right columns */
+}
 
-.left-column {
-  flex: 1;
-  margin-inline-end: 10%;
-  border: 3px; 
+.left-column,
+.right-column,
+.third-column {
+  border: 3px solid red;
   border-image: linear-gradient(31deg, rgba(207, 229, 255, 0.90) 0%, rgba(42, 114, 136, 0.90) 25%, rgba(207, 229, 255, 0.90) 50%, rgba(42, 114, 136, 0.90) 75%, rgba(207, 229, 255, 0.90) 100%);
   border-image-slice: 1;
-}
-
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 2px;
-    margin-inline-end: 20%;
-}
-.right-column {
-   width: 40%;
-   flex: 1;
-}
-.left-column,
-.right-column {
-  border: 3px solid transparent; /* Set a transparent border initially */
-}
-.content-container {
-  /* ... */
-  display: flex;
-  justify-content: space-evenly; margin-top: 20px;
-  margin-left: 0px
-  padding: 30px;
-
-}
-
-.content-container img {
-  /* ... */
-  max-width: 100%;
-  margin-top: -17%;
- 
-}
-
-.columns-container {
-  /* ... */
-  display: flex;
-  flex-direction: column; /* Change to column layout for smaller screens */
-  align-items: center; /* Center the columns on smaller screens */
-  margin-top: 20px;
-}
-
-.left-column,
-.right-column {
-  /* ... */
-  /* Columns should take full width on smaller screens */
-  margin-inline: 0; /* Remove the margins on smaller screens */
-  margin-bottom: 0px;
-  width: 40%;
-   /* Add some space between the columns */
-}
-
-/* ... */
-
-/* Media query for responsiveness */
-@media screen and (min-width: 768px) {
-  .content-container {
-    /* ... */
-    justify-content: space-between; /* Revert to space-between for larger screens */
-  }
-
-  .columns-container {
-    /* ... */
-    flex-direction: row; /* Revert to row layout for larger screens */
-    align-items: flex-start; /* Align the columns at the top for larger screens */
-  }
-
- }
-
-.image-container {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.image-container img {
-  width: 305px; /* Set the width to match the left image */
-  height: auto; /* Maintain the aspect ratio */
-}
-
-/* Add a new CSS class for the buttons */
-.button {
-  display: inline-flex;
-  padding: 15.5px 24px 15.5px 28px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  border-radius: 28px;
-  background: var(--rose, #FF70A9);
-  cursor: pointer; /* Add cursor pointer to indicate interactivity */
-  color: white;
-  font-size: 16px;
-  text-decoration: none; /* Remove underline from anchor elements */
-  transition: background-color 0.3s ease; /* Add a smooth transition effect */
-}
-
-/* Apply the button style to all buttons with the "button" class */
-.button-container .button {
-  /* Add margin if needed between buttons */
-  margin-right: 10px;
-}
-
-/* Change button background on hover */
-.button:hover {
-  background-color: var(--rose-hover, #FF507A);
-}
-.footer {
-  background-color: #333;
-  color: white;
-  width:100%
   padding: 20px;
-  /* Set the footer to be positioned at the bottom of the page */
-  position: absolute  ;
-  bottom: -2820px;
-  left: 0;
-  right: 0;
 }
 
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
-}
-.footer p {
-  color: rgba(0, 191, 240, 9.0);
-  margin-bottom: 0;
+.left-column,
+.right-column {
+  flex: 1;
 }
 
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links li {
-  display: inline;
-  margin: 0 10px;
-}
-
-.footer-links li a {
-  color: white;
-  text-decoration: none;
+..third-column {
+  width: 100%; /* Take full width minus margin and border */
+  margin: 0 auto; /* Center the third column horizontally */
 }
 
 /* Media query for responsiveness */
-@media screen and (min-width: 768px) {
-  .footer-content {
-    justify-content: space-between;
-    align-items: left;
+@media screen and (max-width: 768px) {
+  .hero-content {
+    /* For smaller screens, adjust the top value to keep the content centered */
+    top: 40%;
   }
 
-  .footer-links {
-    margin-top: 10px;
+  /* On smaller screens, switch to a single column layout */
+  .columns-container {
+    grid-template-columns: 1fr; /* Single column */
   }
 }
-/* ... (existing CSS styles) ... */

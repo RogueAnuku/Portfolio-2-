@@ -60,9 +60,6 @@ body {
   font-weight: 600;
 }
 
-/* Add your other CSS rules here */
-
-/* Example styles for the hero section */
 .hero {
   height: 30%;
   min-height: 0; /* Remove the min-height */
@@ -131,17 +128,35 @@ body {
     /* For even smaller screens, adjust the top value further to keep the content centered */
     top: 30%;
   }
+
+  .glass-border {
+    border-width: 3px;
+    border-style: solid;
+    border-image: url("./boarder.png") 30 fill;
+  }
+  
+.h2 { 
+  margin-top: -74px; margin-left: 60px;
+
+}
+
+
 }
 
 .columns-container {
   display: flex;
-  margin-top: 20px; /* Adjusted the margin */
-  margin-left: 10%;
+  flex-direction: column; /* Change to column layout for smaller screens */
+  align-items: center; /* Center the columns on smaller screens */
+  margin-top: 20px;
 }
+
 
 .left-column {
   flex: 1;
   margin-inline-end: 10%;
+  border: 3px; 
+  border-image: linear-gradient(31deg, rgba(207, 229, 255, 0.90) 0%, rgba(42, 114, 136, 0.90) 25%, rgba(207, 229, 255, 0.90) 50%, rgba(42, 114, 136, 0.90) 75%, rgba(207, 229, 255, 0.90) 100%);
+  border-image-slice: 1;
 }
 
 p {
@@ -155,66 +170,23 @@ p {
    width: 40%;
    flex: 1;
 }
-
-.footer {
-  background-color: #333;
-  color: white;
-  padding: 20px 20;
-}
-
-
-
-.footer-content {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  }
-
-.footer p {color: rgba(0, 191, 240, 9.0);
-  margin-bottom: 0px;
-}
-
-.footer-links {
-  list-style: vertical;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links li {
-  display: inline;
-  margin: 0 10px;
-}
-
-.footer-links li a {
-  color: white;
-  text-decoration: none;
-}
-
-/* Media query for responsiveness */
-@media screen and (min-width: 768px) {
-  .footer-content {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: left;
-  }
-
-  .footer-links {
-    margin-top: 10px;
-  }
+.left-column,
+.right-column {
+  border: 3px solid transparent; /* Set a transparent border initially */
 }
 .content-container {
   /* ... */
   display: flex;
   justify-content: space-evenly; margin-top: 20px;
   margin-left: 0px
-  padding-: 30px;
+  padding: 30px;
 
 }
 
 .content-container img {
   /* ... */
   max-width: 100%;
-  margin-top: -15%;
+  margin-top: -17%;
  
 }
 
@@ -232,6 +204,7 @@ p {
   /* Columns should take full width on smaller screens */
   margin-inline: 0; /* Remove the margins on smaller screens */
   margin-bottom: 0px;
+  width: 40%;
    /* Add some space between the columns */
 }
 
@@ -250,11 +223,7 @@ p {
     align-items: flex-start; /* Align the columns at the top for larger screens */
   }
 
-  /* ... */
-}
-.right-column {
-  width: 40%;
-}
+ }
 
 .image-container {
   display: flex;
@@ -266,6 +235,7 @@ p {
   width: 305px; /* Set the width to match the left image */
   height: auto; /* Maintain the aspect ratio */
 }
+
 /* Add a new CSS class for the buttons */
 .button {
   display: inline-flex;
@@ -292,3 +262,54 @@ p {
 .button:hover {
   background-color: var(--rose-hover, #FF507A);
 }
+.footer {
+  background-color: #333;
+  color: white;
+  width:100%
+  padding: 20px;
+  /* Set the footer to be positioned at the bottom of the page */
+  position: absolute  ;
+  bottom: -2820px;
+  left: 0;
+  right: 0;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.footer p {
+  color: rgba(0, 191, 240, 9.0);
+  margin-bottom: 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Media query for responsiveness */
+@media screen and (min-width: 768px) {
+  .footer-content {
+    justify-content: space-between;
+    align-items: left;
+  }
+
+  .footer-links {
+    margin-top: 10px;
+  }
+}
+/* ... (existing CSS styles) ... */

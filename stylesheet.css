@@ -1,13 +1,4 @@
-{
-  margin: 0;
-  padding: 0;
-}
-
-/* Set default font-family and background color */
 body {
-  font-family: 'Mulish', sans-serif;
-  background-color: black;
-  color: white;
   font-family: 'Mulish', sans-serif;
   background-color: black;
   color: white;
@@ -16,9 +7,6 @@ body {
   margin-bottom: 0px;
   margin-left: 0px;
 }
-
-/* Top bar styles */
-/* Add your existing CSS styles here */
 
 /* Top bar styles */
 .top-bar {
@@ -64,47 +52,46 @@ body {
   font-weight: 600;
 }
 
-/* Add your other CSS rules here */
-
 .center-image {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: -170px;
+  align-items: center; 
 }
 
 .center-image img {
   max-width: 100%;
   height: auto;
 }
+
 .hero {
   height: 30%;
-  min-height: 0; /* Remove the min-height */
+  min-height: 0;
   position: relative;
- 
   background-color: transparent;
-  /* Set the container's aspect ratio using padding-top */
-  padding-top: 43%; /* Adjust this percentage to fit the border within the new size */
+  padding-top: 43%;
 }
+
 .hero-content {
   text-align: center;
   color: #0ac7e7;
   position: absolute;
-  top: 50%; /* Center the content vertically */
-  left: 50%; /* Center the content horizontally */
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1; /* Ensure the text is on top of the image */
+  z-index: 1;
 }
+
 .hero-image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   background-image: url("./WRH.png");
-  background-size: cover; /* Make the background image cover the container */
-  background-position: center; /* Center the background image horizontally and vertically */
- box-shadow: 4px 0px 19px 10px rgba(35 162 175);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 4px 0px 19px 10px rgba(35 162 175);
 }
+
 .hero-heading {
   color: #FFF;
   font-family: 'Mulish', sans-serif;
@@ -115,56 +102,20 @@ body {
   margin-top: -300px;
 }
 
-
-.hero-paragraph {
-  font-family: 'Mulish', sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-/* Add your other CSS rules here */
-
-/* Media query for responsiveness */
-@media screen and (max-width: 768px) {
-  .hero-content {
-    /* For smaller screens, adjust the top value to keep the content centered */
-    top: 40%;
-  }
-}
-
-/* Media query for even smaller screens (optional) */
-@media screen and (max-width: 480px)
-  .hero-content {
-    /* For even smaller screens, adjust the top value further to keep the content centered */
-    top: 30%;
-
-
-  .glass-border {
-    border-width: 3px;
-    border-style: solid;
-    border-image: url("./boarder.png") 30 fill;
-  }
-  
-.h2 { 
-  margin-top: -74px; margin-left: 60px;
-
-}
-}
-/* Add your existing CSS styles here */
-
 /* Separate styles for the three-column layout */
 .columns-container {
+  padding: 20px;
   width: 100%;
-  margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns side by side on larger screens */
-  gap: 20px; /* Add some spacing between columns */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 53px;
 }
 
-.left-right-columns {
-  display: flex;
-  gap: 20px; /* Add some spacing between left and right columns */
+.title {
+  margin-bottom: 70px;
+  font-size: 24px;
+  color: #F23580;
+  text-align: center;
 }
 
 .left-column,
@@ -174,6 +125,8 @@ body {
   border-image: linear-gradient(31deg, rgba(207, 229, 255, 0.90) 0%, rgba(42, 114, 136, 0.90) 25%, rgba(207, 229, 255, 0.90) 50%, rgba(42, 114, 136, 0.90) 75%, rgba(207, 229, 255, 0.90) 100%);
   border-image-slice: 1;
   padding: 20px;
+  text-decoration-color: black;
+  font-size: 14px;
 }
 
 .left-column,
@@ -181,20 +134,67 @@ body {
   flex: 1;
 }
 
-..third-column {
-  width: 100%; /* Take full width minus margin and border */
-  margin: 0 auto; /* Center the third column horizontally */
+.third-column {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #FFF;
 }
 
-/* Media query for responsiveness */
-@media screen and (max-width: 768px) {
-  .hero-content {
-    /* For smaller screens, adjust the top value to keep the content centered */
-    top: 40%;
-  }
+.third-column .text {
+  color: black;
+  font-size: 14px;
+}
 
-  /* On smaller screens, switch to a single column layout */
-  .columns-container {
-    grid-template-columns: 1fr; /* Single column */
-  }
+/* Make the "glass" image expand with its parent content */
+.glass {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Footer styles */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 30px;
+ 
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo img {
+  width: 40px; /* Adjust the width as needed */
+  height: auto;
+}
+
+.footer-navigation {
+  display: flex;
+  list-style: none;
+}
+
+.footer-navigation li {
+  margin-left: 20px;
+}
+
+.footer-navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Additional Responsive Styles */
+@media (max-width: 768px) {
+  /* Add responsive styles if needed */
 }

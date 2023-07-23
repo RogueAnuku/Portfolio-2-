@@ -112,10 +112,7 @@ body {
 }
 
 /* Add some padding to the content inside the glass container (optional) */
-.glass > * {
-  width: 100%;
-  padding: 2px;
-}
+
 /* Set the flex property for each column */
 .left-column,
 .right-column {
@@ -350,9 +347,7 @@ resume-section {
 /* Styles for the image section */
 .image-section {
   text-align: center;
-  margin-top: 120px;
-  padding: 30%;
-}
+   }
 
 
 /* Footer styles */

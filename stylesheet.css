@@ -134,8 +134,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("glassborders.png"); /* Relative path to the image */
-  background-repeat: repeat; /* Repeat the border image to cover the entire column */
+   background-repeat: repeat; /* Repeat the border image to cover the entire column */
   background-size: 100% 100%; /* Stretch the image to fill the column */
   pointer-events: none; /* Make the pseudo-elements non-interactable */
   z-index: -1; /* Move the pseudo-elements behind the content */
@@ -279,14 +278,12 @@ body {
 }
 
 .image-box img {
-  width: 100%;
+  margin-left: 40px;
+  width: 74%;
   height: auto;
   border-radius: 13px;
-  background: url(./"ANIKA.png";)
-  border-radius: 13px;
-background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;
-  opacity: 0.8; /* Adjust the opacity as needed */
+  /* Adjust the opacity as needed */
 }
 
 /* Styles for the flexbox */
@@ -327,6 +324,36 @@ box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.062
 @media (max-width: 768px) {
   /* Add responsive styles if needed */
 }
+
+resume-section {
+  background-color: #111; /* Adjust the background color as needed */
+  color: white;
+  padding: 30px;
+  position: relative; /* Add relative positioning to create a stacking context */
+}
+
+/* Styles for the border image and title */
+.resume-section .border-image {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.resume-section .title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+/* Styles for the image section */
+.image-section {
+  text-align: center;
+  margin-top: 120px;
+  padding: 30%;
+}
+
 
 /* Footer styles */
 .footer {

@@ -1,3 +1,23 @@
+/* Media query for devices with a minimum width of 800px and minimum aspect ratio of 1/1 */
+@media (min-width: 800px) and (min-aspect-ratio: 1/1) {
+  /* Add your styles for this media query here */
+  /* Example:
+  body {
+    font-size: 20px;
+  }
+  */
+}
+
+/* Media query for devices with a minimum width of 768px and minimum device width of 1024px */
+@media (min-width: 768px) and (min-device-width: 1024px) {
+  /* Add your styles for this media query here */
+}
+
+/* Media query for devices with a minimum width of 320px and minimum device width of 480px */
+@media (min-width: 320px) and (min-device-width: 480px) {
+  /* Add your styles for this media query here */
+}
+
 body {
   font-family: 'Mulish', sans-serif;
   background-color: black;
@@ -101,6 +121,54 @@ body {
   margin-bottom: 10px;
   margin-top: -300px;
 }
+
+
+.containerGrid {
+  display: grid;
+  background-color: #2196F3;
+  padding: 80px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50%;
+  margin-left: 10%;
+  margin-right: 10%; 
+  grid-row-gap: 100px;
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Adjust this to your desired grid columns */
+    gap: 10px; /* Adjust this to your desired gap between grid items */
+    border: 2px solid red; /* Add a red border to the grid container */
+    padding: 10px; /* Add padding to create space for the border */
+  }
+  
+  /* Style the grid items */
+  }
+
+ .grid-item {
+  border: 1px solid rgb(255, 0, 0); /* Add a black border to each grid item (optional) */
+  padding: 10px; /* Add padding to the grid items for better appearance (optional) */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Separate styles for the three-column layout */
 .columns-container {
@@ -336,12 +404,7 @@ box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.062
   font-weight: bold;
 }
 
-/* Additional Responsive Styles */
-@media (max-width: 768px) {
-  /* Add responsive styles if needed */
-}
-
-resume-section {
+.resume-section {
   background-color: #111; /* Adjust the background color as needed */
   color: white;
   padding: 30px;
@@ -413,7 +476,3 @@ resume-section {
   font-weight: 500;
 }
 
-/* Additional Responsive Styles */
-@media (max-width: 768px) {
-  /* ... your existing responsive styles ... */
-}

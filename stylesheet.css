@@ -159,7 +159,8 @@ body {
   /* Add your styles here for the main text content in the left column */
   font-size: 14px;
   line-height: 1.6;
-  color: #ccc; }
+  color: #ccc;
+width: 470px; }
 
 .left-column::after {
   bottom: 0;
@@ -185,17 +186,14 @@ body {
   /* Add your styles here for the main text content in the left column */
   font-size: 14px;
   line-height: 1.6;
-  color: #ccc; }
+  color: #ccc; 
+width: 470px;}
 
 /* Set the border image for the third column using pseudo-elements */
 .third-column {
   flex: 1;
-  padding: 20px;
+  margin-left: 20px; position: relative;
   /* Position the column to act as a container */
-}
-.third-column {
-  flex: 1;
-  padding: 20px;
 }
 
 .third-column .glass {
@@ -209,6 +207,8 @@ body {
   font-size: 24px;
   font-weight: bold;
   color: #fff;
+  margin-top: -62px;
+  margin-bottom: 100px;
 }
 
 .third-column .image {
@@ -219,6 +219,7 @@ body {
   font-size: 14px;
   line-height: 1.6;
   color: #ccc;
+  width: 470px;
 }
 
 .third-column::before,

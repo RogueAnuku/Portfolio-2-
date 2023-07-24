@@ -121,6 +121,7 @@ body {
   /* Position the columns to act as a container */
 }
 
+
 .left-column::before,
 .right-column::before,
 .left-column::after,
@@ -155,12 +156,18 @@ body {
   right: 0;
   border-top: 3px solid transparent; /* Adjust the border size and color as needed */
 }
+
+
+
+.left-column .title { color: #F23580;}
+
 .left-column .text {
   /* Add your styles here for the main text content in the left column */
   font-size: 14px;
   line-height: 1.6;
   color: #ccc;
-width: 470px; }
+width: 470px; 
+margin-left: 100px;}
 
 .left-column::after {
   bottom: 0;
@@ -182,6 +189,16 @@ width: 470px; }
   right: 0;
   border-bottom: 3px solid transparent; /* Adjust the border size and color as needed */
 }
+
+.right-column .title {
+  /* Existing styles ... */
+  color: #F23580; 
+  margin-top: -62px;
+  margin-bottom: 100px;
+  margin-left: 10%;
+}/* Change the color value to your desired color */
+  /* Additional styles ... */
+S
 .right-column .text {
   /* Add your styles here for the main text content in the left column */
   font-size: 14px;
@@ -197,7 +214,7 @@ width: 470px;}
 }
 
 .third-column .glass {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, );
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -206,9 +223,10 @@ width: 470px;}
 .third-column .title {
   font-size: 24px;
   font-weight: bold;
-  color: #fff;
+  color: #F23580;
   margin-top: -62px;
   margin-bottom: 100px;
+  margin-left: 10%;
 }
 
 .third-column .image {

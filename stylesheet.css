@@ -76,11 +76,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; margin-top: -200px;
+  padding-bottom: 250px;
 }
 
 .center-image img {
   max-width: 100%;
   height: auto;
+  position: relative;
 }
 
 .hero {
@@ -95,6 +97,7 @@ body {
   text-align: center;
   color: #0ac7e7;
   position: absolute;
+  font-size: 32px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -103,251 +106,55 @@ body {
 
 .hero-image {
   position: absolute;
-  top: 0;
+  top: -100px;
   left: 0;
   width: 100%;
   background-image: url("./WRH.png");
   background-size: cover;
   background-position: center;
-  box-shadow: 4px 0px 19px 10px rgba(35 162 175);
-}
+ }
 
 .hero-heading {
   color: #FFF;
   font-family: 'Mulish', sans-serif;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 600;
   line-height: 1;
   margin-bottom: 10px;
-  margin-top: -300px;
+  margin-top: -340px;
 }
 
 
 .containerGrid {
   display: grid;
-  background-color: #2196F3;
-  padding: 80px;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50%;
-  margin-left: 10%;
-  margin-right: 10%; 
-  grid-row-gap: 100px;
-
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 100px); /* Adjust this to your desired grid columns */
-    gap: 10px; /* Adjust this to your desired gap between grid items */
-    border: 2px solid red; /* Add a red border to the grid container */
-    padding: 10px; /* Add padding to create space for the border */
-  }
-  
-  /* Style the grid items */
-  }
-
- .grid-item {
-  border: 1px solid rgb(255, 0, 0); /* Add a black border to each grid item (optional) */
-  padding: 10px; /* Add padding to the grid items for better appearance (optional) */
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-top: 30px;
+  margin-left: 60px;
+  padding-bottom: 230px;
 }
 
+.grid-item {
+  position: relative;
+  
+}
 
+.grid-item img {
 
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.grid-title {
+  color: #f23580;
+ margin-top: -55px;
+   color: white;
+    font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10%;
+}
 
 
 /* Separate styles for the three-column layout */
-.columns-container {
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px; /* Allow columns to wrap to a new line */
-}
-
-/* Add some padding to the content inside the glass container (optional) */
-
-/* Set the flex property for each column */
-.left-column,
-.right-column {
-  flex: 1;
-  margin-left: 20px;
-  /* Position the columns to act as a container */
-}
-
-
-.left-column::before,
-.right-column::before,
-.left-column::after,
-.right-column::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-   background-repeat: repeat; /* Repeat the border image to cover the entire column */
-  background-size: 100% 100%; /* Stretch the image to fill the column */
-  pointer-events: none; /* Make the pseudo-elements non-interactable */
-  z-index: -1; /* Move the pseudo-elements behind the content */
-}
-
-/* Set the border images for the top and bottom of the columns */
-.left-column::before,
-.left-column::after {
-  border: 3px solid transparent; /* Adjust the border size as needed */
-}
-
-.right-column::before,
-.right-column::after {
-  border: 3px solid transparent; /* Adjust the border size as needed */
-}
-
-/* Position the top and bottom borders to create the border effect */
-.left-column::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  border-top: 3px solid transparent; /* Adjust the border size and color as needed */
-}
-
-
-
-.left-column .title { color: #F23580;}
-
-.left-column .text {
-  /* Add your styles here for the main text content in the left column */
-  font-size: 14px;
-  line-height: 1.6;
-  color: #ccc;
-width: 470px; 
-margin-left: 100px;}
-
-.left-column::after {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-bottom: 3px solid transparent; /* Adjust the border size and color as needed */
-}
-
-.right-column::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  border-top: 3px solid transparent; /* Adjust the border size and color as needed */
-}
-
-.right-column::after {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-bottom: 3px solid transparent; /* Adjust the border size and color as needed */
-}
-
-.right-column .title {
-  /* Existing styles ... */
-  color: #F23580; 
-  margin-top: -62px;
-  margin-bottom: 100px;
-  margin-left: 10%;
-}/* Change the color value to your desired color */
-  /* Additional styles ... */
-S
-.right-column .text {
-  /* Add your styles here for the main text content in the left column */
-  font-size: 14px;
-  line-height: 1.6;
-  color: #ccc; 
-width: 470px;}
-
-/* Set the border image for the third column using pseudo-elements */
-.third-column {
-  flex: 1;
-  margin-left: 20px; position: relative;
-  /* Position the column to act as a container */
-}
-
-.third-column .glass {
-  background-color: rgba(255, 255, 255, );
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.third-column .title {
-  font-size: 24px;
-  font-weight: bold;
-  color: #F23580;
-  margin-top: -62px;
-  margin-bottom: 100px;
-  margin-left: 10%;
-}
-
-.third-column .image {
-  width: 125px;
-}
-
-.third-column .text {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #ccc;
-  width: 470px;
-}
-
-.third-column::before,
-.third-column::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("glassborders.png"); /* Relative path to the image */
-  background-repeat: repeat; /* Repeat the border image to cover the entire column */
-  background-size: 100% 100%; /* Stretch the image to fill the column */
-  pointer-events: none; /* Make the pseudo-elements non-interactable */
-  z-index: -1; /* Move the pseudo-elements behind the content */
-}
-
-/* Set the border images for the top and bottom of the third column */
-.third-column::before,
-.third-column::after {
-  border: 3px solid transparent; /* Adjust the border size as needed */
-}
-
-/* Position the top and bottom borders to create the border effect for the third column */
-.third-column::before {
-  top: 0;
-  left: 0;
-  right: 0;
-  border-top: 3px solid transparent; /* Adjust the border size and color as needed */
-}
-
-.third-column::after {
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-bottom: 3px solid transparent; /* Adjust the border size and color as needed */
-}
-.third-column .text {
-  /* Add your styles here for the main text content in the left column */
-  font-size: 14px;
-  line-height: 1.6;
-  color: #ccc; }
 
 .container {
   display: flex;
@@ -434,7 +241,7 @@ box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.062
 
 /* Footer styles */
 .footer {
-  background-color: #353535;
+  background-color: #053b49;
   color: white;
   padding: 30px;
   /* Set the footer to stick to the bottom of the viewport */
@@ -444,7 +251,6 @@ box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.062
 }
 
 .footer {
-  background-color:#353535;
   color: white;
   padding: 30px;
 }

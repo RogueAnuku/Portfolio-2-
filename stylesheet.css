@@ -375,7 +375,7 @@ box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.062
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 40px;
+  grid-gap: 10px;
   margin-bottom: 100px;
   margin-left: 100px;
   margin-right: 100px;
@@ -397,7 +397,7 @@ box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.062
 .grid-item-topleft {
   grid-column: 1;
   border: 3px solid transparent;
-  border-image: url('./Outlineboarder.png') 30 round;
+  border-image: url('./Outlineboarder.png') 3 round;
   padding: 20px;
   font-size: 14px;
   position:relative;
@@ -427,7 +427,7 @@ box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.062
   
   grid-column: 2/ span 2;
   border: 3px solid transparent;
-  border-image: url('./Outlineboarder.png') 30 round;
+  border-image: url('./Outlineboarder.png') 3 round;
   padding: 20px;
    font-size: 14px;
   margin-left: 22px;
@@ -444,10 +444,11 @@ box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.062
   width: 400px;
   grid-column: 1 / span 2;
   border: 3px solid transparent;
-  border-image: url('./Outlineboarder.png') 30 round;
+  border-image: url('./Outlineboarder.png') 3 round;
   padding: 20px;
   font-size: 14px;
-  position:relative
+  position:relative;
+  background-color: #FFF;
 }
 .grid-item-bottomcenter img {
   width:100%;
@@ -458,11 +459,22 @@ box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.062
 /* Additional styling for grid titles */
 .grid-title {
   color: #f23580;
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
   padding-bottom: 50px;
-}
+  }
 
+ p[style="color: black;"] {
+  /* Add your styles here */
+  /* For example, you can set a different font size */
+  font-size: 14px;
+  color:#111;
+}
+p[style="color: black;"] t[style="font-size: 14px;"] {
+  /* Add your styles here */
+  /* For example, you can set a different font size */
+  font-size: 18px;
+}
    
   .button-container {
     display: flex;

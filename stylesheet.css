@@ -373,56 +373,85 @@ box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.062
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
+  grid-gap: 40px;
   margin-bottom: 100px;
   margin-left: 100px;
   font-size: 14px;
+  justify-content: center;
+  margin-top: -100px;
 }
 
+.boarder-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Send it behind other content */
+}
+
+
 .grid-item-topleft {
-  width: 360px;
+  width: 100%;
   grid-column: 1;
   border: 3px solid transparent;
   border-image: url('./Outlineboarder.png') 30 round;
   padding: 20px;
   font-size: 14px;
+  position:relative;
 }
 
-img { width: 114%;
-  margin-left: -22px;
-  margin-top:-25px;}
+.grid-item-topleft-title{
+  margin-bottom: 20px;
+}
+.grid-item-topleft img {
+  width:100%;
+  
+
+}
+.goidesktop img {
+  width: 80%;
+  
+}
 
 .grid-item-topright {
-  width: 360px;
+  width: 100%
   grid-column: 2/ span 2;
   border: 3px solid transparent;
   border-image: url('./Outlineboarder.png') 30 round;
   padding: 20px;
-  margin-left: 100px;
-  font-size: 14px;
+   font-size: 14px;
+  margin-left: 22px;
+  position: relative;
 }
- 
-img { 
-  width: 114%;
-  margin-left: -22px;
-  margin-top: -25px
+.grid-item-topright img {
+  width: 100%
+
 }
 
+
+
 .grid-item-bottomcenter {
-  width: 360px;
+  width: 400px;
   grid-column: 1 / span 2;
   border: 3px solid transparent;
   border-image: url('./Outlineboarder.png') 30 round;
   padding: 20px;
   font-size: 14px;
+  position:relative
+}
+.grid-item-bottomcenter img {
+  width:100%;
+ 
 }
 
 
 /* Additional styling for grid titles */
 .grid-title {
   color: #f23580;
-  font-size: 32px;
+  font-size: 30px;
   text-align: center;
+  padding-bottom: 50px;
 }
 
    

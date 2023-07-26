@@ -370,12 +370,15 @@ box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.062
 /* Rest of the styles for this media query... */
 }
 
+
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 40px;
   margin-bottom: 100px;
   margin-left: 100px;
+  margin-right: 100px;
   font-size: 14px;
   justify-content: center;
   margin-top: -100px;
@@ -392,7 +395,6 @@ box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.062
 
 
 .grid-item-topleft {
-  width: 100%;
   grid-column: 1;
   border: 3px solid transparent;
   border-image: url('./Outlineboarder.png') 30 round;
@@ -405,17 +407,24 @@ box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.062
   margin-bottom: 20px;
 }
 .grid-item-topleft img {
-  width:100%;
-  
+    width:100%;}
 
-}
+ img[src="./image 10.png"] {
+      /* Add your styles here */
+      /* For example, you can set a max-width for the image */
+      max-width: 50%;
+    }
+  img[src="./Screenshot 2023-07-06 182859 1.png"] {
+    max-width: 49%;
+  }
+
+
 .goidesktop img {
-  width: 80%;
-  
+     width: 50%;
 }
-
+  
 .grid-item-topright {
-  width: 100%
+  
   grid-column: 2/ span 2;
   border: 3px solid transparent;
   border-image: url('./Outlineboarder.png') 30 round;
@@ -449,7 +458,7 @@ box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.062
 /* Additional styling for grid titles */
 .grid-title {
   color: #f23580;
-  font-size: 30px;
+  font-size: 24px;
   text-align: center;
   padding-bottom: 50px;
 }

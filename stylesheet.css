@@ -1,9 +1,7 @@
-/* Media query for devices with a minimum width of 800px and minimum aspect ratio of 1/1 */
 
-/* Media query for devices with a minimum width of 768px and minimum device width of 1024px */
 @media (min-width: 768px) and (min-device-width: 1024px) {
   /* Add your styles for this media query here */
-}
+
 
 body {
   font-family: 'Mulish', sans-serif;
@@ -70,9 +68,8 @@ body {
 .hero-content {
   text-align: center;
   color: #0ac7e7;
-  position: absolute;
+  position: relative;
   font-size: 32px;
-  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -80,12 +77,10 @@ body {
 
 .hero-image {
   position: absolute;
-  top: -100px;
+  top: -134px;
   left: 0;
   width: 100%;
-  background-image: url("./WRH.png");
-  background-size: cover;
-  background-position: center;
+ height: 97% 
  }
 
 .hero-heading {
@@ -95,7 +90,7 @@ body {
   font-weight: 600;
   line-height: 1;
   margin-bottom: 10px;
-  margin-top: -340px;
+  
 }
 .center-image {
   display: flex;
@@ -104,6 +99,10 @@ body {
    margin-top: -80px;
    padding-top: 40px;
   padding-bottom: 250px;
+}
+.selector {
+  background-image: url("./Portfolio-center-image.svg");
+  /* Add other CSS properties as needed */
 }
 .grid-container {
   display: grid;
@@ -129,6 +128,10 @@ body {
   margin-left: 100px;
   font-size: 14px;
  }
+ .grid-item-topright-government img {
+  width: 117%;
+  margin-left: -20px;
+  }
 
 .grid-item-bottomcenter {
   grid-column: 1 / span 2;
@@ -297,10 +300,7 @@ box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.062
   font-size: 16px;
   font-weight: 500;
 }
-
-
-
-
+}
 
 
 @media (min-width: 800px) and (min-aspect-ratio: 1/1)  

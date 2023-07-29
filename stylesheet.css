@@ -74,23 +74,29 @@ margin-right: -26%;
    /* Lower z-index for the hero section compared to .center-image */
 }
 
+.hero-heading {
+color: #FFF;
+font-family: 'Mulish', sans-serif;
+font-size: 40px;
+font-weight: 600;
+line-height: 1;
+margin-bottom: 15px;
+margin-top: -290%;}
+
 .hero-image {
   width: 100%;
  height: 97%; 
- margin-top: -60px;
+ margin-top: -90px;
  }
 
+ 
+
 p1#smallblue {
- margin-left: 25%;
+ 
  text-align: center;
  color: #08c7e7;
  justify-content: center;}
 
-.center-image {
-  margin-top: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
 
 .center-image img {
   width: 92%;
@@ -186,6 +192,16 @@ font-size: 14px;}
   background-color: #f5f5f5; /* Replace with your desired background color */
   color: #333; /* Replace with your desired text color */
 }
+
+.h5, h5 {color: #F23580;
+margin-left: 50%;
+font-size: 32px;}
+
+
+
+
+
+
 /* Styles for the image box */
 .image-box {
   flex: 1; /* Take 1/3 of the container width */
@@ -204,39 +220,15 @@ box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.062
 }
 
 /* Styles for the flexbox */
-.flex-box {
-  flex: 2; /* Take 2/3 of the container width */
-  display: flex;
-  flex-direction: column;
-  margin-top: -178%;
+
+.col-md-6 {
+  max-width: 40%;
+  flex: 0,0,50%;
+}
+.col-md-6 img {
+  width: 100%;
 }
 
-/* Top horizontal column styles */
-.top-horizontal-column {
- justify-content: center;
-  height: 220px;
-  background-color: white;
-  color: black;
-  border: 2px solid red;
-}
-
-.top-horizontal-column h2 {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-/* Styles for each horizontal column */
-.horizontal-column {
-  flex: 1;
-  display: flex;
-  padding: 20px;
-  border: 2px solid red;
-}
-
-.horizontal-column p {
-  font-size: 18px;
-  font-weight: bold;
-}
 
 #arrow-container {
   position: fixed;
@@ -331,7 +323,7 @@ box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.062
 
 
 
-}
+
 
 
 @media (min-width: 800px) and (min-aspect-ratio: 1/1)  

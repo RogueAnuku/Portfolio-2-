@@ -7,26 +7,70 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-</head>
-<body> 
-  <div class="content-wrapper"> 
-    <header class="top-bar">
-      <div class="container">
-        <div class="logo">
-          <img src="./IconOnly_Transparent_NoBuffer.png" alt="Logo"> 
-        <div class="name">Anika McPhee</div>
-      </div>
-      <ul class="navigation-links">
-        <li><a href="#">Home</a></li>
-        <li><a class="nav-link-projects" href="#center-projects">Projects</a></li>
+  <style>
+    body {
+      font-family: 'Mulish', sans-serif;
+      background-color: black;
+      color: white;
+      margin-top: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: 0;
+    }
 
-        <li><a href="#">About</a></li>
-        <li><a href="#">Resume</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-  </header>
+    /* Rest of your existing CSS styles */
+
+    /* Style for the h5 element */
+    .h5 {
+      color: #F23580;
+      margin-left: 50%;
+      font-size: 32px;
+      padding-bottom: 46px;
+      position: relative;
+    }
+
+    /* Use ::before pseudo-element to add the border image as a background */
+    .h5::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -30px; /* Adjust this value to adjust the position of the border image */
+      width: 60px; /* Adjust the width of the border image */
+      height: 100%;
+      background-image: "./boarder" /* Replace with the correct path to your border image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform: translateY(-50%);
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+<body style="
+
+padding-top: 40px ;
+padding-bottom: 40px;
+border-top-width: 30px;
+margin-top: 67px;
+";> 
+<header class="top-bar">
+  <div class="container">
+    <div class="logo">
+      <img src="./IconOnly_Transparent_NoBuffer.png" alt="Logo"> 
+    <div class="name">Anika McPhee</div>
   </div>
+  <ul class="navigation-links">
+    <li><a href="#">Home</a></li>
+    <li><a class="nav-link-projects" href="#center-projects">Projects</a></li>
+
+    <li><a href="#">About</a></li>
+    <li><a href="#">Resume</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</div>
+</header>
+</div>> 
+  
       
   <img src="./WRH.png" class="hero-image";>
   
@@ -126,7 +170,9 @@
         <div class="row">
           <!-- Left column with image -->
           <div class="col-md-6">
-            <img class="left-image" src="./ANIKA.png" alt="Left Image" style="width: 100%;">
+            <div class="image-wrapper">
+              <img class="left-image" src="./ANIKA.png" alt="Left Image";>
+            </div>
           </div>
           <!-- Right column with text box -->
           <div class="col-md-6">
@@ -181,39 +227,35 @@ Feedback Analysis
           </div>
         </div>
       </div>
-      <div>
-        <h5> 
-          <t>Resume</t>
-        </h5>
-      </div>
-      <div class="resume-section">
-        <div class="container" style="justify-content: center; ">
-          <div class="resume-title-wrapper"></div>
-            <div class="image-section" style="padding-top: 0px;">
-              <img src="./resume.png" alt="Image">
-          </div>
-        </div>
-     </div>
 
-      <div class="arrow-container">
-        <img src="./Arrow up.png" class="arrow-image">
-      </div>
-  
-           
-      <footer class="footer">
-        <div class="container">
-          <div class="footer-logo">
-            <img src="./IconOnly_Transparent_NoBuffer.png" alt="Footer Logo">
+   
+              
+        
+      <div class="resume-section">
+        <div class="resume-title-wrapper">
+          <h5><t>Resume</t></h5>
+          <div class="image-section">
+            <img src="./resume.png" alt="Image">
           </div>
-          <ul class="footer-navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
         </div>
-      </footer>
+      </div>
+       
+
+            
+        <footer class="footer">
+          <div class="container">
+            <div class="footer-logo">
+              <img src="./IconOnly_Transparent_NoBuffer.png" alt="Footer Logo">
+            </div>
+            <ul class="footer-navigation">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Resume</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </footer>
   
       <script>
         $(document).ready(function() {

@@ -1,7 +1,5 @@
-
 @media (min-width: 768px) and (min-device-width: 1024px) {
   /* Add your styles for this media query here */
-
 
 body {
   font-family: 'Mulish', sans-serif;
@@ -121,7 +119,6 @@ body {
   margin-top: 36px;
 }
 
-
 .projectsintro {
   font-size: 32px;
   color: #F23580;
@@ -167,7 +164,6 @@ h3 {padding: 5%;}
 h4 {padding: 5%;
   color:#000
 }
-
 
 .t2 {
 margin-right: 5%;
@@ -219,9 +215,7 @@ font-size: 14px;}
   color: #333; /* Replace with your desired text color */
 }
 
-
 /* Styles for the image box */
-
 
 /* Styles for the flexbox */
 .image-wrapper {
@@ -278,7 +272,7 @@ margin-top
 .new-arrow-container {
   position: absolute;
   top: 76%;
-  right: 30px;
+  right: -150px;
   cursor: pointer;
   z-index: 9999;
 }
@@ -288,7 +282,6 @@ margin-top
   margin-top: -70px;
   /* Add your styles here */
 }
-
 
 
 
@@ -331,13 +324,28 @@ margin-top
    width: 100%;
 }
 
-.h5, h5 {  margin-top: -1659px;
+.h5 {
   color: #F23580;
-   font-size: 32px;
-    padding-bottom: 14px;
-  text-align:center;}
+  margin-left: 50%;
+  font-size: 32px;
+  padding-bottom: 46px;
+  position: relative;
+}
 
-
+/* Use ::before pseudo-element to add the border image as a background */
+.h5::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px; /* Adjust this value to adjust the position of the border image */
+  width: 60px; /* Adjust the width of the border image */
+  height: 100%;
+ 
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  z-index: -1;
+}
 
 /* Rest of your CSS code... */
 
@@ -366,7 +374,6 @@ form {
   margin-left: -10px;
   /* line-height: 53px; */
 }
-
 
 /* Adjust the size of the input fields */
 .form-control {
@@ -405,7 +412,6 @@ form {
   height: 160px;
 }
 
-
 /* Footer styles */
 .footer {padding-top: 10px;
   background-color: #053b49;
@@ -435,7 +441,6 @@ form {
   font-size: 16px;
   font-weight: 500;
 }
-
 
 
 
@@ -491,7 +496,6 @@ form {
 }
 
 
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -513,7 +517,6 @@ form {
   height: 100%;
   z-index: -1; /* Send it behind other content */
 }
-
 
 .grid-item-topleft {
   grid-column: 1;
@@ -539,7 +542,6 @@ form {
     max-width: 49%;
   }
 
-
 .goidesktop img {
      width: 50%;
 }
@@ -560,7 +562,6 @@ form {
 }
 
 
-
 .grid-item-bottomcenter {
   width: 380px;
 margin-left: 25%;
@@ -578,7 +579,6 @@ margin-top: 100px;
   width:100%;
  
 }
-
 
 /* Additional styling for grid titles */
 .grid-title {
@@ -688,3 +688,5 @@ flex-direction: column; }
 @media (min-width: 320px) and (min-device-width: 480px) {
   /* Add your styles for this media query here */
 }
+
+

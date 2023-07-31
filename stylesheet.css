@@ -16,11 +16,13 @@ body {
 /* Top bar styles */
 .top-bar {
   background-color: black;
-  padding: 20px; /* Add padding to create space around the logo and name */
+  /* Add padding to create space around the logo and name */
   display: flex;
   justify-content: space-between; /* Center all items horizontally */
   align-items: center; /* Center all items vertically */
-  margin-left: -20%;
+  margin-left: -10%;
+  padding:10px;
+  padding-bottom: 64px;
 }
 
 .container {
@@ -33,6 +35,7 @@ margin-top: -3%;}
   .logo {
     display: flex;
     align-items: center;
+   
   }
   
   .logo img {
@@ -42,6 +45,7 @@ margin-top: -3%;}
   }
   
   .name {
+    padding: 10px;
     font-weight: bold;
     color: white;
     margin-left: 10px; /* Add some spacing between the logo and name */
@@ -67,42 +71,36 @@ margin-right: -26%;
   font-weight: 600;
   }
  
-
-
-.hero {
-  position: static;  
-  padding-top: 43%;
-   /* Lower z-index for the hero section compared to .center-image */
-}
-
-.hero-heading {
-color: #FFF;
-font-family: 'Mulish', sans-serif;
-font-size: 40px;
-font-weight: 600;
-line-height: 1;
-margin-bottom: 15px;
-margin-top: -290%;}
-
-.hero-image {
+ 
+ .hero img{
   width: 100%;
- height: 97%; 
- margin-top: -90px;
+  margin-top: -100px;
  }
 
- 
+  .hero-heading {
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    width: 700px;
+    transform: translate(-50%, -317%);
+    color: #FFF;
+    font-family: 'Mulish', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0;
+  }
+  
+  .hero-subheading {
+    text-align: center;
+    color: #08c7e7;
+    font-family: 'Mulish', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: -350px;
+    
+  }
 
-p1#smallblue {
- 
- text-align: center;
- color: #08c7e7;
- justify-content: center;}
-
-
-.center-image img {
-  width: 92%;
-  margin-top: -90px;
-}
 
 .projectsintro {
   font-size: 32px;
@@ -134,6 +132,9 @@ margin-right: 142px;
 margin-left: 32%;
 width: 70%;
 }
+.center-image img{
+  z-index: 1; 
+margin-top: -100px;}
 
 /* Your existing CSS code here */
 .row {
@@ -147,10 +148,6 @@ h4 {padding: 5%;
   color:#000
 }
 
-p {
-margin-right: 5%;
-margin-left: 5%;
-font-size: 14px;}
 
 .t2 {
 margin-right: 5%;
@@ -216,11 +213,11 @@ font-size: 14px;}
 /* Style for the image */
 .left-image {border-radius: 13px;
 box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;
-width: 554px;
+width: 568px;
 margin-left: 10px;
-max-width: 525px;
+max-width: 568px;
 margin-top
-:-107px ;}
+:-51px ;max-width: 545px;}
 
 .col-md-6 {
   margin-top: -107px
@@ -239,6 +236,7 @@ margin-top
   background: white;
   color: black;
   border-radius: 13px;
+  margin-top: -126px;
 }
 
 /* Add margin to create separation between the text columns and the grid */
@@ -250,8 +248,8 @@ margin-top
 
 .col-md-6 {
   position: relative; /* Set the position to relative to allow positioning adjustments */
-  top: -1300px; /* Adjust the negative value to move it higher (higher negative value moves it higher) */
-  transform: translateY(-50%); /* Optional: Vertically center the element within its parent */
+  /* Adjust the negative value to move it higher (higher negative value moves it higher) */
+  transform: translateY(-191%); /* Optional: Vertically center the element within its parent */
 }
 .col-md-6 .text-box{
   padding: 20px;
@@ -260,16 +258,14 @@ margin-top
 /* Add the following CSS to style the .resume-title-wrapper and .image-section */
 /* Center the content horizontally and vertically on the page */
 .resume-section {
-  margin-top: -60px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Adjust the height as needed to center the content */
+ margin-top: 191px;
 }
-.resume-title-wrapper {
-  margin-top: -42%;
-}
+
 /* Center the resume title horizontally */
 .resume-title {
   text-align: center;
@@ -308,8 +304,71 @@ margin-top
 
 /* Rest of your CSS code... */
 
+/* Apply general styles to the form and its elements */
+body {
+  background-color: white;
+  color: black; /* Set the text color to black */
+}
+
+/* Apply general styles to the form and its elements */
+form {
+  margin-top: -500px;
+  width: 43%; /* Adjust the width as needed */
+  margin-left: 29%;/* Center the form horizontally within its container */
+  padding: 38px; /* Add padding to provide some spacing around the form elements */
+  background-color: white; /* Set the background color of the form to white */
+  border-radius: 5px;
+}
+.contact-title p{
+  color: #00BFF0;
+  font-family: Mulish;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 10px;
+  margin-left: -10px;
+  /* line-height: 53px; */
+}
+/* Adjust the size of the input fields */
+.form-control {
+  width: 100%; /* Set the input fields to take up 100% of the available width */
+  padding: 10px; /* Adjust the padding as needed */
+  color: black; /* Set the text color to black */
+}
+
+/* Adjust the size of the labels */
+.form-label {
+  font-size: 16px; /* Adjust the font size as needed */
+  color: black; /* Set the text color to black */
+}
+
+/* Adjust the size of the checkbox input */
+.form-check-input {
+  width: 20px; /* Adjust the width of the checkbox as needed */
+  height: 20px; /* Adjust the height of the checkbox as needed */
+  color: black; /* Set the text color to black */
+}
+
+/* Adjust the size of the checkbox label */
+.form-check-label {
+  font-size: 14px; /* Adjust the font size of the checkbox label as needed */
+  color: black; /* Set the text color to black */
+}
+
+/* Adjust the size of the submit button */
+.btn-primary {
+  font-size: 16px; /* Adjust the font size of the button as needed */
+  padding: 10px 20px; /* Adjust the padding of the button as needed */
+  color: black; /* Set the text color to black */
+}
+
+#exampleInputPassword1.form-control {
+  height: 160px;
+}
+
+
 /* Footer styles */
-.footer {
+.footer {padding-top: 10px;
   background-color: #053b49;
   color: white;
   padding: 30px;

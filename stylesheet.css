@@ -292,10 +292,15 @@ margin-top
 
 
 /* Center the resume title horizontally */
-.resume-title {
-  text-align: center;
-  margin-top: -40%;
-}
+    /* padding-bottom: 10px; */
+.resume-section  {
+margin-bottom: 557px;
+    /* background-color: #111; */
+    color: white;
+    position: relative;
+    padding-top: 236px;
+    padding: 0px;} 
+    /* background-color: #000; */
 
 /* Center the resume image horizontally */
 .image-section {
@@ -326,6 +331,12 @@ margin-top
   padding-bottom: 46px;
   position: relative;
 }
+.h5, h5 {  color: #F23580;
+  margin-top: -1330px; 
+  margin-left: 45%;
+  font-size: 38px;
+
+}
 
 /* Use ::before pseudo-element to add the border image as a background */
 .h5::before {
@@ -342,6 +353,9 @@ margin-top
   z-index: -1;
 }
 
+.h6, h6 {
+  margin-top: -10px; color: #F23580; font-size: 38px;
+}
 /* Rest of your CSS code... */
 
 /* Apply general styles to the form and its elements */

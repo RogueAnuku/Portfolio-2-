@@ -255,6 +255,23 @@ margin-top
   padding: 20px;
 }
 
+.new-arrow-container {
+  position: absolute;
+  top: 76%;
+  right: 30px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+/* CSS for the new arrow image (optional) */
+.new-arrow-image {
+  margin-top: -70px;
+  /* Add your styles here */
+}
+
+
+
+
 /* Add the following CSS to style the .resume-title-wrapper and .image-section */
 /* Center the content horizontally and vertically on the page */
 .resume-section {
@@ -329,6 +346,8 @@ form {
   margin-left: -10px;
   /* line-height: 53px; */
 }
+
+
 /* Adjust the size of the input fields */
 .form-control {
   width: 100%; /* Set the input fields to take up 100% of the available width */

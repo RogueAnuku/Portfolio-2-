@@ -7,7 +7,8 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <style>
+ </head>
+ <style>
     body {
       font-family: 'Mulish', sans-serif;
       background-color: black;
@@ -225,9 +226,10 @@ Feedback Analysis
           </div>
         </div>
       </div>
-
-   
-              
+<div class="grind-item-topright"></div>
+<div class="arrow-container">
+  <img src="./Arrow_up.png" class="arrow-image">
+</div>           
         
       <div class="resume-section">
         <div class="resume-title-wrapper">
@@ -237,15 +239,16 @@ Feedback Analysis
           </div>
         </div>
       </div>
-           
-      <div class="content-wrapper">
-        <form>
+
+      
+      <div class="new-header">contact</div>
+             <form>
           <div class="contact-title" style="font-size: 32px;">
             <p> I'd love to share my work with you and answer any questions you may have. Leave your email and message and I'll get to you soon.</p>
           </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+           <div class="mb-3">
+             <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
         <div class="mb-3">
@@ -254,7 +257,7 @@ Feedback Analysis
         </div>
            <button type="submit" class="btn btn-primary">Submit</button>
       </form>
-    </div>
+   
             
         <footer class="footer">
           <div class="container">
@@ -270,38 +273,45 @@ Feedback Analysis
             </ul>
           </div>
         </footer>
-  
-      <script>
-        $(document).ready(function() {
-          // Add a click event listener to the arrow image
-          $(".arrow-image").on("click", function() {
-            // Scroll back to the top of the page with a smooth animation
-            $("html, body").animate({ scrollTop: 0 }, "slow");
+      </div>
+        <script>
+          $(document).ready(function() {
+            // Add a click event listener to the arrow image
+            $(".arrow-image").on("click", function() {
+              // Scroll back to the top of the page with a smooth animation
+              $("html, body").animate({ scrollTop: 0 }, "slow");
+            });
+        
+            // Add the click event listener for the "Projects" navigation link here
+            $(".nav-link-projects").on("click", function(event) {
+              event.preventDefault();
+              const targetElement = $("#projects");
+              const targetOffset = targetElement.offset().top;
+        
+              // Close the mobile menu if it's open (for responsiveness)
+              $(".navbar-collapse").collapse("hide");
+        
+              // Scroll to the target element with a smooth animation
+              $("html, body").animate(
+                {
+                  scrollTop: targetOffset,
+                },
+                {
+                  duration: 1000, // Adjust the duration as needed (in milliseconds)
+                  easing: "easeInOutCubic", // Use easing function for a smoother effect
+                }
+              );
+            });
+        
+            // Add the click event listener for the new arrow element here
+            $(".arrow-image-new").on("click", function() {
+              // Scroll to the position of column 4 with a smooth animation
+              const column4Offset = $(".col-6").eq(3).offset().top;
+              $("html, body").animate({ scrollTop: column4Offset }, "slow");
+            });
           });
-      
-          // Add the click event listener for the "Projects" navigation link here
-          $(".nav-link-projects").on("click", function(event) {
-            event.preventDefault();
-            const targetElement = $("#projects");
-            const targetOffset = targetElement.offset().top;
-      
-            // Close the mobile menu if it's open (for responsiveness)
-            $(".navbar-collapse").collapse("hide");
-      
-            // Scroll to the target element with a smooth animation
-            $("html, body").animate(
-              {
-                scrollTop: targetOffset,
-              },
-              {
-                duration: 1000, // Adjust the duration as needed (in milliseconds)
-                easing: "easeInOutCubic", // Use easing function for a smoother effect
-              }
-            );
-          });
-        });
-      </script>
+        </script>
               
-    </div>   
+       
   </body>
   </html>

@@ -1,1 +1,2 @@
-
+$("#navigation-links").css("display", "block");
+$("#navigation-links2").css("display", "none");

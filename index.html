@@ -61,8 +61,7 @@
       <li><a href="#">Resume</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
-  </div>
-</header>
+  </header>
 </div> 
   
       
@@ -367,7 +366,21 @@ Feedback Analysis
         });
       </script>
       
-        
+       <script>
+  $(document).ready(function() {
+    // Add a click event listener to the "Resume" link
+    $("ul.navigation-links li a[href='#']").on("click", function(event) {
+      // Prevent the default link behavior (e.g., navigating to the href)
+      event.preventDefault();
+
+      // Get the target element's offset from the top of the document
+      const targetOffset = $(".resume-section").offset().top;
+
+      // Scroll to the target element with a smooth animation
+      $("html, body").animate({ scrollTop: targetOffset }, "slow");
+    });
+  });
+</script> 
         
         
               

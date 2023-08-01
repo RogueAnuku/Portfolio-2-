@@ -10,12 +10,30 @@ body {
   margin-bottom: 0;
   margin-left: 0;
 }
-.h2, h2 {
-  color: #f23580;
 
-}
 /* Top bar styles */
+.h5 {
+  color: #F23580;
+  margin-left: 50%;
+  font-size: 32px;
+  padding-bottom: 46px;
+  position: relative;
+}
 
+/* Use ::before pseudo-element to add the border image as a background */
+.h5::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px; /* Adjust this value to adjust the position of the border image */
+  width: 60px; /* Adjust the width of the border image */
+  height: 100%;
+  background-image: url("./boarder.png"); /* Replace with the correct path to your border image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  z-index: -1;
+}
 
 /* Adjust the top-bar styles */
 .top-bar {
@@ -43,8 +61,6 @@ body {
   color: white;
 }
 
-/* Other CSS rules above */
-
 .navigation-links {
   list-style: none;
   margin: 0;
@@ -69,8 +85,8 @@ body {
 }
 
 .navigation-links a:hover {
-  background-color: #f23580;
-  box-shadow:  0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;}
+  background-color: #F23580;
+  box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;}
 
 .hero-content {
   margin-top: -116px;
@@ -83,7 +99,7 @@ body {
   transform: translate(-50%, -50%);
   z-index: 1;
 }
-
+}
 .hero-heading {
   
     color: #FFF;
@@ -132,28 +148,16 @@ margin-right: 142px;
   height: 100vh; /* Set the height to 100vh to center it vertically */
 margin-left: 32%;
 width: 70%;
-margin-bottom: 20;
 }
-.col-md-4 {
-  -ms-flex: 0 0 33.333333%;
-  flex: 0 0 33.333333%;
-  max-width: 21.33333%
-  margin-top: -1861px;
-}
-
 .center-image img{
   z-index: 1; 
-margin-top: -100px;
-margin-bottom: 10px
-;}
+margin-top: -100px;}
 
 /* Your existing CSS code here */
 .row {
   display: flex;
   flex-wrap: wrap;
   width: 109%;
-  margin-top: -180px;
-  margin-bottom: 10%;
 }
 
 h3 {padding: 5%;}
@@ -192,34 +196,23 @@ font-size: 14px;}
 }
 
 .button:hover {
-  background-color:#00bff0;
+  background-color: #00bff0;
 }
 
 .center-content{
   align-items: flex-start; /* Align items to the top of the container */
   padding: 20px;
-  margin-bottom: 10%;
 }
-#about-section.about-section {
-  margin-top: -889px;
-}
-#row-container .col-md-4:nth-child(2) {
-  margin-left: 10%;
-  /* Your CSS styles for the second row here */
-  /* For example, change the background color */
-  background-color: lightblue;
-}
+
 .col-6 {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;
   margin-top: 15%;
- 
 }
 .smart-design {
   background-color: #f5f5f5; /* Replace with your desired background color */
   color: #333; /* Replace with your desired text color */
-  margin-bottom: 10%;
 }
 
 /* Styles for the image box */
@@ -232,38 +225,50 @@ font-size: 14px;}
 }
 
 /* Style for the image */
-..left-image {
-  /* Styles for the left image container */
-  width: 40%;
-  float: left;
-  margin-right: 30px;
+.left-image {border-radius: 13px;
+box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;
+width: 568px;
+margin-left: 10px;
+max-width: 568px;
+margin-top
+:-51px ;max-width: 545px;}
+
+.col-md-6 {
+  margin-top: -107px
+}
+
+/* Clear the float to prevent layout issues with other elements */
+.col-md-6:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Adjust the width of the right column */
+.col-md-6:last-child {
+  width: 66.6667%;
+  background: white;
+  color: black;
   border-radius: 13px;
-  box-shadow:  0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;}
+  margin-top: -126px;
 }
 
-.left-image img {
-  /* Styles for the left image */
-  width: 100%; /* Adjust the size as needed */
+/* Add margin to create separation between the text columns and the grid */
+.col-md-4 {
+  margin-bottom: 20px;
 }
 
-.h2, h2 {
-  /* Styles for the "About" header */
-  color: #f23580;
-  font-size: 28px;
-  font-weight: bold;
+/* Adjust the width of the right column */
+
+.col-md-6 {
+  position: relative; /* Set the position to relative to allow positioning adjustments */
+  /* Adjust the negative value to move it higher (higher negative value moves it higher) */
+  transform: translateY(-191%); /* Optional: Vertically center the element within its parent */
+}
+.col-md-6 .text-box{
+  padding: 20px;
 }
 
-.about-text {
-  /* Styles for the "About" text */
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.col-md-2 {
-  margin-left: 30%;
-  /* Styles for col-md-2 */
-  /* Add any specific styles you want for this column */
-}
 .new-arrow-container {
   position: absolute;
   top: 76%;
@@ -282,18 +287,20 @@ font-size: 14px;}
 
 /* Add the following CSS to style the .resume-title-wrapper and .image-section */
 /* Center the content horizontally and vertically on the page */
+.resume-section {
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ margin-top: 191px;
+}
 
 /* Center the resume title horizontally */
-    /* padding-bottom: 10px; */
-.resume-section  {
-margin-bottom: 754px;
-margin-top: 1380px;
-    /* background-color: #111; */
-    color: white;
-    position: relative;
-        padding: 0px;} 
-    /* background-color: #000; */
+.resume-title {
+  text-align: center;
+  margin-top: -40%;
+}
 
 /* Center the resume image horizontally */
 .image-section {
@@ -317,38 +324,13 @@ margin-top: 1380px;
    width: 100%;
 }
 
-.h5 {
+.h5, h5 {  margin-top: -1659px;
   color: #F23580;
-  margin-left: 50%;
-  font-size: 32px;
-  padding-bottom: 46px;
-  position: relative;
-}
-.h5, h5 {  color: #F23580;
-  margin-top: -1330px; 
-  margin-left: 45%;
-  font-size: 38px;
+   font-size: 32px;
+    padding-bottom: 14px;
+  text-align:center;}
 
-}
 
-/* Use ::before pseudo-element to add the border image as a background */
-.h5::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -30px; /* Adjust this value to adjust the position of the border image */
-  width: 60px; /* Adjust the width of the border image */
-  height: 100%;
- 
-  background-size: cover;
-  background-repeat: no-repeat;
-  transform: translateY(-50%);
-  z-index: -1;
-}
-
-.h6, h6 {
-  margin-top: -10px; color: #F23580; font-size: 38px;
-}
 /* Rest of your CSS code... */
 
 /* Apply general styles to the form and its elements */
@@ -444,7 +426,7 @@ form {
   font-weight: 500;
 }
 
-}
+
 
 
 
@@ -673,7 +655,13 @@ flex-direction: column; }
   font-size: 14px;
   font-weight: 100;
 }
-
+.resume-section {/* background-color: #111; */
+    color: white;
+    position: relative;
+    padding-top: 236px;
+    padding: 0px;
+    background-color: #000;
+}
 .image-section {text-align: center;}
 
 .resume-section .container {
@@ -684,5 +672,3 @@ flex-direction: column; }
 @media (min-width: 320px) and (min-device-width: 480px) {
   /* Add your styles for this media query here */
 }
-
-

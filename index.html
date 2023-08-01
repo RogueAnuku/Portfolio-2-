@@ -61,8 +61,7 @@
       <li><a href="#">Resume</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
-  </div>
-</header>
+  </header>
 </div> 
   
       
@@ -119,11 +118,16 @@
     </div>
   </div>
 
-  <div class="center-container">
-    <div class="container">
-      <div class="row">
-        <div class="col-6 px-0" style="border: 3px solid transparent; border-image: url('./Outlineboarder.png') 3 round;">
-          <div class="smart-design">
+  <div class="center-content">
+ 
+      <div class="jewl-img">
+        <img src="./AdobeStock_570844739bbb 2 (1).png">
+     </div>
+      <div class="center-container">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 px-0" style="border: 3px solid transparent; border-image: url('./Outlineboarder.png') 3 round;">
+              <div class="smart-design">
             <img src="./boarder.png" style="width: 102%;">
             <h4> Designing Smart Receipes</h4>
             <img src="./Homechef1mobile.png">
@@ -137,18 +141,17 @@
             </div>
           </div>
         </div>
-      </div>
+        </div>
     </div>
+   </div>
   </div>
 
   
   
 
 
-  <div class="gem-section">
-    <img src="./AdobeStock_570844739bbb 2 (1).png">
-  </div>
 
+ 
   
 
   <!-- Move this section after the center-container -->
@@ -156,11 +159,10 @@
     <img src="./Arrow-up.png" class="arrow-image">
   </div>
     
+  
 
- 
-      <div class="container">
-        <div class="row">
-          <!-- Left column with image -->
+
+        <!-- Left column with image -->
           <div class="col-md-6">
             <div class="image-wrapper">
               <img id="about-image" class="left-image" src="./ANIKA.png" alt="Left Image";>
@@ -168,16 +170,17 @@
           </div>
           <!-- Right column with text box -->
           <div class="col-md-6" id="about-section">
-            <div class="text-box">
+              <div class="text-box">
               <h2>About</h2>
               <p>
                 What sets Anika apart is her unique background, characterized by their experience as a residential program manager for adults with developmental disabilities. This valuable experience has instilled in her a profound sense of empathy and a strong motivation to enhance usability and accessibility for all individuals. They firmly believe that technology possesses the power to bridge gaps and offer equitable opportunities, enabling marginalized voices to be heard. Fueled by this passion, her focus lies in creating designs that are not just visually appealing but also inclusive and accessible.
               </p>
             </div>
-
+          
             <div class="new-arrow-container">
               <img src="./Arrow-up.png" class="arrow-image-new">
             </div>
+          
             <div class="row">
               <!-- Three vertical columns -->
               <div class="col-md-4">
@@ -185,11 +188,10 @@
                   <h3>User Research </h3>
                   <p>
                     Anika finds user research to be an exhilarating beginning to the creative process. Her typical approach involves:   conducting online surveys, and synthesizing data.
-
-Methodology: 
-Developing Research Plans 
-User Interview Scripts 
-Online interviews and surveys. 
+                    Methodology: 
+                    Developing Research Plans 
+                    User Interview Scripts 
+                    Online interviews and surveys. 
                   </p>
                 </div>
               </div>
@@ -197,11 +199,10 @@ Online interviews and surveys.
                 <div class="column-text">
                   <h3>Qualitative Interviews</h3>
                   <p>
-                    Understanding the user requires a deep understanding of their behaviors, and obtaining qualitative data is considered a best practice for achieving this. With over seven years of experience, they specialize in conducting behavior-based interviews to gain valuable insights into user motivations and actions.
-
-Methodology: 
-Behavioral Based Interviews
-Feedback Analysis   
+                  Understanding the user requires a deep understanding of their behaviors, and obtaining qualitative data is considered a best practice for achieving this. With over seven years of experience, they specialize in conducting behavior-based interviews to gain valuable insights into user motivations and actions.
+                  Methodology: 
+                  Behavioral Based Interviews
+                  Feedback Analysis   
                   </p>
                 </div>
               </div>
@@ -223,8 +224,7 @@ Feedback Analysis
           </div>
         </div>
       </div>
-          
-        
+  
       <div class="resume-section">
         <div class="resume-title-wrapper">
           <h5><t>Resume</t></h5>
@@ -235,10 +235,9 @@ Feedback Analysis
       </div>
 
       
-      <div class="new-header">contact</div>
-             <form>
-          <div class="contact-title" style="font-size: 32px;">
-            <p> I'd love to share my work with you and answer any questions you may have. Leave your email and message and I'll get to you soon.</p>
+       <form>
+      <div class="contact-title" style="font-size: 32px;">
+        <p> I'd love to share my work with you and answer any questions you may have. Leave your email and message and I'll get to you soon.</p>
           </div>
            <div class="mb-3">
              <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -248,9 +247,9 @@ Feedback Analysis
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Message</label>
           <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
+      </div>
            <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+    </form>
    
             
         <footer class="footer">
@@ -276,31 +275,16 @@ Feedback Analysis
               $("html, body").animate({ scrollTop: 0 }, "slow");
             });
         
-            // Add the click event listener for scrolling to the projects section
-            $(".nav-link-projects").on("click", function(event) {
-              // Prevent the default link behavior (e.g., navigating to the href)
-              event.preventDefault();
+            
         
-              // Get the target element's offset from the top of the document
-              const targetOffset = $("#center-projects").offset().top;
-        
-              // Scroll to the target element with a smooth animation
-              $("html, body").animate({ scrollTop: targetOffset }, "slow");
-            });
-        
-            // Add the click event listener for scrolling to the about section
-            $("a[href='#about-section']").on("click", function(event) {
-              // Prevent the default link behavior (e.g., navigating to the href)
-              event.preventDefault();
-        
-              // Get the target element's offset from the top of the document
-              const targetOffset = $("#about-section").offset().top;
-        
-              // Scroll to the target element with a smooth animation
-              $("html, body").animate({ scrollTop: targetOffset }, "slow");
+            // Add the click event listener for the new arrow element here
+            $(".arrow-image-new").on("click", function() {
+              // Scroll to the position of column 4 with a smooth animation
+              const column4Offset = $(".col-6").eq(3).offset().top;
+              $("html, body").animate({ scrollTop: column4Offset }, "slow");
             });
           });
-        </script>
+          </script>
 
       <script>
         $(document).ready(function() {
@@ -380,10 +364,18 @@ Feedback Analysis
         });
       </script>
       
-        
-        
-        
-              
-       
-  </body>
-  </html>
+       <script>
+  $(document).ready(function() {
+    // Add a click event listener to the "Resume" link
+    $("ul.navigation-links li a[href='#']").on("click", function(event) {
+      // Prevent the default link behavior (e.g., navigating to the href)
+      event.preventDefault();
+
+      // Get the target element's offset from the top of the document
+      const targetOffset = $(".resume-section").offset().top;
+
+      // Scroll to the target element with a smooth animation
+      $("html, body").animate({ scrollTop: targetOffset }, "slow");
+    });
+  });
+</script> 

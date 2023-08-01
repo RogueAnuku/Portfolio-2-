@@ -10,30 +10,12 @@ body {
   margin-bottom: 0;
   margin-left: 0;
 }
+.h2, h2 {
+  color: #f23580;
 
+}
 /* Top bar styles */
-.h5 {
-  color: #F23580;
-  margin-left: 50%;
-  font-size: 32px;
-  padding-bottom: 46px;
-  position: relative;
-}
 
-/* Use ::before pseudo-element to add the border image as a background */
-.h5::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -30px; /* Adjust this value to adjust the position of the border image */
-  width: 60px; /* Adjust the width of the border image */
-  height: 100%;
-  background-image: url("./boarder.png"); /* Replace with the correct path to your border image */
-  background-size: cover;
-  background-repeat: no-repeat;
-  transform: translateY(-50%);
-  z-index: -1;
-}
 
 /* Adjust the top-bar styles */
 .top-bar {
@@ -61,6 +43,8 @@ body {
   color: white;
 }
 
+/* Other CSS rules above */
+
 .navigation-links {
   list-style: none;
   margin: 0;
@@ -85,8 +69,8 @@ body {
 }
 
 .navigation-links a:hover {
-  background-color: #F23580;
-  box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;}
+  background-color: #f23580;
+  box-shadow:  0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;}
 
 .hero-content {
   margin-top: -116px;
@@ -94,12 +78,12 @@ body {
   color: #0ac7e7;
   position: absolute;
   font-size: 22px;
-  top: 78%;
+ 
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
 }
-}
+
 .hero-heading {
   
     color: #FFF;
@@ -123,8 +107,9 @@ body {
   font-size: 32px;
   color: #F23580;
 margin-left: 47%;
-  padding-bottom: 3%;
-  margin-top: -15%;
+background-color: #f5f5f5;}
+ 
+ .text-box {width: 500px;margin-left: 712px;}
 
   /* position: relative; */
   /* width: 100%; */
@@ -141,23 +126,26 @@ margin-right: 142px;
   width: 30px;
   height: auto;
 }
-.center-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Set the height to 100vh to center it vertically */
-margin-left: 32%;
-width: 70%;
-}
+
+.col-md-4 {
+  -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+ 
+margin-bottom:10%}
+
 .center-image img{
   z-index: 1; 
-margin-top: -100px;}
+margin-top: -100px;
+margin-bottom: 10px
+;}
 
 /* Your existing CSS code here */
 .row {
   display: flex;
   flex-wrap: wrap;
   width: 109%;
+  margin-bottom: 10%;
 }
 
 h3 {padding: 5%;}
@@ -196,78 +184,71 @@ font-size: 14px;}
 }
 
 .button:hover {
-  background-color: #00bff0;
+  background-color:#00bff0;
 }
 
 .center-content{
   align-items: flex-start; /* Align items to the top of the container */
   padding: 20px;
+  margin-bottom: 10%;
+}
+.jewl-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Send it behind other content */
 }
 
-.col-6 {
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  max-width: 50%;
-  margin-top: 15%;
+.jewl-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.center-content {
+  align-items: flex-start; /* Align items to the top of the container */
+  padding: 20px;
+  margin-bottom: 10%;
+  position: relative;
+}
+
+.center-content h4 {
+  font-size: 38px;
+  color: #F23580;
+}
 }
 .smart-design {
   background-color: #f5f5f5; /* Replace with your desired background color */
   color: #333; /* Replace with your desired text color */
+ 
 }
+
+
+#about-section.col-md-6 {
+Flex: 0 0 0; 
+max-width:100%;
+}
+
+.left-image {border-radius: 13px;
+  box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;
+  width: 568px;
+  ;max-width: 545px;}
+  
 
 /* Styles for the image box */
 
 /* Styles for the flexbox */
 .image-wrapper {
+ 
   width: 40%;
   float: left;
   margin-right: 30px; /* Add some spacing between the image and the grid */
 }
 
 /* Style for the image */
-.left-image {border-radius: 13px;
-box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;
-width: 568px;
-margin-left: 10px;
-max-width: 568px;
-margin-top
-:-51px ;max-width: 545px;}
 
-.col-md-6 {
-  margin-top: -107px
-}
-
-/* Clear the float to prevent layout issues with other elements */
-.col-md-6:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Adjust the width of the right column */
-.col-md-6:last-child {
-  width: 66.6667%;
-  background: white;
-  color: black;
-  border-radius: 13px;
-  margin-top: -126px;
-}
-
-/* Add margin to create separation between the text columns and the grid */
-.col-md-4 {
-  margin-bottom: 20px;
-}
-
-/* Adjust the width of the right column */
-
-.col-md-6 {
-  position: relative; /* Set the position to relative to allow positioning adjustments */
-  /* Adjust the negative value to move it higher (higher negative value moves it higher) */
-  transform: translateY(-191%); /* Optional: Vertically center the element within its parent */
-}
-.col-md-6 .text-box{
-  padding: 20px;
-}
 
 .new-arrow-container {
   position: absolute;
@@ -283,24 +264,15 @@ margin-top
   /* Add your styles here */
 }
 
-
-
-/* Add the following CSS to style the .resume-title-wrapper and .image-section */
-/* Center the content horizontally and vertically on the page */
-.resume-section {
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
- margin-top: 191px;
-}
-
-/* Center the resume title horizontally */
-.resume-title {
-  text-align: center;
-  margin-top: -40%;
-}
+    /* padding-bottom: 10px; */
+.resume-section  {
+margin-bottom: 754px;
+margin-top: 616px;
+    /* background-color: #111; */
+    color: white;
+    position: relative;
+        padding: 0px;} 
+    /* background-color: #000; */
 
 /* Center the resume image horizontally */
 .image-section {
@@ -315,22 +287,40 @@ margin-top
   z-index: 9999; /* Ensure the arrow is on top of other elements */
 }
 
-.gem-section {
-  margin-top: -52%;
-}
 
-.gem-section img {
-  margin-top: -4196px;
-   width: 100%;
-}
 
-.h5, h5 {  margin-top: -1659px;
+.h5 {
   color: #F23580;
-   font-size: 32px;
-    padding-bottom: 14px;
-  text-align:center;}
+  margin-left: 50%;
+  font-size: 32px;
+  padding-bottom: 46px;
+  position: relative;
+}
+.h5, h5 {  color: #F23580;
+  
+  margin-left: 45%;
+  font-size: 38px;
 
+}
 
+/* Use ::before pseudo-element to add the border image as a background */
+.h5::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px; /* Adjust this value to adjust the position of the border image */
+  width: 60px; /* Adjust the width of the border image */
+  height: 100%;
+ 
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.h6, h6 {
+  margin-top: -10px; color: #F23580; font-size: 38px;
+}
 /* Rest of your CSS code... */
 
 /* Apply general styles to the form and its elements */
@@ -348,6 +338,7 @@ form {
   background-color: white; /* Set the background color of the form to white */
   border-radius: 5px;
 }
+
 .contact-title p{
   color: #00BFF0;
   font-family: Mulish;
@@ -436,31 +427,7 @@ form {
 {
   /* Top bar styles */
 
-.hero {
-  height: 30%;
-  min-height: 0;
-  position: relative;
-}
 
-.hero-content {
-  text-align: center;
-  color: #0ac7e7;
-  position: absolute;
-  font-size: 22px;
-  top: 78%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
-
-.hero-heading {
-  color: #FFF;
-  font-family: 'Mulish', sans-serif;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 1;
-  margin-bottom: -15px;
-  margin-top: -143%;
 }
 
 .center-image {
@@ -469,7 +436,6 @@ form {
   align-items: center;
   margin-top: -100px;
   padding-top: 40px;
-  padding-bottom: 250px;
 }
 
 .center-image img {
@@ -477,21 +443,9 @@ form {
 }
 
 /* Rest of the styles for this media query... */
-}
 
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  margin-bottom: 100px;
-  margin-left: 100px;
-  margin-right: 100px;
-  font-size: 14px;
-  justify-content: center;
-  margin-top: -100px;
-  padding-bottom: 20%;
-}
+
 
 .boarder-image {
   position: absolute;
@@ -511,20 +465,6 @@ form {
   position:relative;
 }
 
-.grid-item-topleft-title{
-  margin-bottom: 20px;
-}
-.grid-item-topleft img {
-    width:100%;}
-
- img[src="./image 10.png"] {
-      /* Add your styles here */
-      /* For example, you can set a max-width for the image */
-      max-width: 50%;
-    }
-  img[src="./Screenshot 2023-07-06 182859 1.png"] {
-    max-width: 49%;
-  }
 
 .goidesktop img {
      width: 50%;
@@ -627,11 +567,7 @@ p[style="color: black;"] t[style="font-size: 14px;"] {
 p {margin-left: 30px;
 font-size: 14px;}
 
-.gem-section img {
-margin-top: -2512px;
-justify-content: center;
-width: 100%;
-}
+
 .top-horizontal-column {
   margin-top: -912px;
   justify-content: center;
@@ -655,13 +591,7 @@ flex-direction: column; }
   font-size: 14px;
   font-weight: 100;
 }
-.resume-section {/* background-color: #111; */
-    color: white;
-    position: relative;
-    padding-top: 236px;
-    padding: 0px;
-    background-color: #000;
-}
+
 .image-section {text-align: center;}
 
 .resume-section .container {

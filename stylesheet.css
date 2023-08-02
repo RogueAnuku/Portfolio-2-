@@ -561,9 +561,7 @@ p[style="color: black;"] t[style="font-size: 14px;"] {
   
   /* Additional styles for laptops with a screen size of 960x540 and above */
   @media (min-width: 960px) and (min-height: 540px) {
-    .container {
-    width: 100%;
-    } 
+    
     /* Top bar styles */
     .top-bar {
       background-color: black;
@@ -642,55 +640,76 @@ p[style="color: black;"] t[style="font-size: 14px;"] {
       width: 288px;
       margin-left: 60px;
     }
-    #about-section {
-       margin-top: -50%;
-       margin-left: 35%;
-    }
+  
+    
     .text-box {
       font-size: 14px;
       /* width: 826px; */
       background-color: white;
       color: black;
-      padding: 20px;
-      border-radius: 13px;
-      margin-bottom: 20px;
-        width: 114%;
+      border-radius: 16px;
+       margin-bottom: 20px;
+        margin-left: -28%;
         padding: 4%;
+        width: 133%;
     }
 
     .h2, h2{
-      font-size: 32x;
+      font-size: 20px;
+      font-weight: bold;
     }
     .h3,h3 {
       font-size: 20px;
       font-weight: bold;
      color: #F23580; 
+
     }
-.col-md-4{    -ms-flex: 0 0 33.333333%;
+
+}
+.col-md-3{   
   flex: 0 0 33.333333%;
-  max-width: 42.333333%;
+  max-width: 25%;
   /* margin-bottom: 10%; */
   background-color: white;
   color: black;
   padding: 19px;
-  margin-left: 34px;
   font-size: 14px;
-  border-radius: 13px;}
+  border-radius: 16px;
+margin-top: -44%;}
 
+  .h6, h6 {
+        /* margin-top: -10px; */
+        color: #F23580;
+        font-size: 20px;
+        font-weight: bold;}
   .mb-3
   {
     border-radius: 40px;
     box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;
-width: 60%;
+width: 28%;
 margin-left: 5%;;
+  }
+  .col-md-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+ }
+
+  .col-md-6 img {
+    width: 75%;
+    margin-left: -1%;}
+  
+  /* Vertically align the columns with vertical sections */
+  .row {    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    }
+.col-md-4.order-md-2 {
+
+}
   }
 
 
 
-
-}
-
-}
 
 /* max-width: 50%; */
 }

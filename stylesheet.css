@@ -271,18 +271,7 @@ margin-left: 596px;
 /* Style for the image */
 
 
-.new-arrow-container {
-  position: absolute;
-  right: -150px;
-  cursor: pointer;
-  z-index: 9999;
-}
 
-/* CSS for the new arrow image (optional) */
-.new-arrow-image {
-  margin-top: -70px;
-  /* Add your styles here */
-}
 
     /* padding-bottom: 10px; */
 .resume-section  {
@@ -297,14 +286,6 @@ margin-top: 180px;
 /* Center the resume image horizontally */
 .image-section {
   text-align: center;
-}
-
-#arrow-container {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  cursor: pointer;
-  z-index: 9999; /* Ensure the arrow is on top of other elements */
 }
 
 
@@ -574,17 +555,77 @@ p[style="color: black;"] t[style="font-size: 14px;"] {
   
   .hero-image img {
     position: absolute;
-    top: 0;
+    top: -9px;
     left: 0;
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 100%;
+  
     object-fit: cover;
   }
   
   /* Additional styles for laptops with a screen size of 960x540 and above */
   @media (min-width: 960px) and (min-height: 540px) {
+    .container {
+    width: 100%;
+    } 
+    /* Top bar styles */
+    .top-bar {
+      background-color: black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+    
+    /* Logo styles */
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-top: 37px;
+    }
+    
+    .logo img {
+      width: 58px;
+      height: 58px; /* Adjust the height as needed */
+    }
+    
+    .name {
+      font-size: 20px; /* Adjust the font size as needed */
+      font-weight: bold;
+      color: white;
+      margin-left: 10px; /* Add a small margin to separate the logo and name slightly */
+    }
+    
+    /* Navigation links styles */
+    .navigation-links {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+    
+    .navigation-links li {
+      margin-right: 8px; 
+      font-family: "mulish";/* Adjust this value to change the spacing between the navigation links */
+    }
+    
+    .navigation-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 600;
+      padding: 10px;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+    
+    .navigation-links a:hover {
+      background-color: #f23580;
+      box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;
+    }
+
     .hero-heading {
     color: #FFF;
     font-family: 'Mulish', sans-serif;
@@ -594,18 +635,44 @@ p[style="color: black;"] t[style="font-size: 14px;"] {
     /* margin-bottom: -15px; */
     margin-top: -229%;}
 
-    .left-image {
-      width: 321px;
-    }
+  
     .image-wrapper {
       float: left;
     }
-    
+    .ui.navigation-links {
+      width: 960px;
     }
-  
-  
+    #about-image {
+      width: 288px;
+      margin-left: 60px;
+    }
+    .text-box {
+      font-size: 16px;
+      /* width: 826px; */
+      background-color: white;
+      color: black;
+      margin-left: -491px;
+      padding: 20px;
+      border-radius: 13px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      width: 586px;
+    }
+.col-md-4{    -ms-flex: 0 0 33.333333%;
+  flex: 0 0 33.333333%;
+  max-width: 42.333333%;
+  /* margin-bottom: 10%; */
+  background-color: white;
+  color: black;
+  padding: 19px;
+  margin-left: 34px;
+  font-size: 16px;
+  border-radius: 13px;
 
+}
 
+/* max-width: 50%; */
+}
 /* Media query for devices with a minimum width of 320px and minimum device width of 480px */
 @media (min-width: 320px) and (min-device-width: 480px) {
   /* Add your styles for this media query here */

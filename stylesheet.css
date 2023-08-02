@@ -1,0 +1,612 @@
+@media (min-width: 768px) and (min-device-width: 1024px) {
+  /* Add your styles for this media query here */
+
+body {
+  font-family: 'Mulish', sans-serif;
+  background-color: black;
+  color: white;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+.h2, h2 {
+  color: #f23580;
+
+}
+/* Top bar styles */
+
+
+/* Adjust the top-bar styles */
+.top-bar {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 58px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.name {
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Other CSS rules above */
+
+.navigation-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.navigation-links li {
+  margin-right: 50px;
+}
+
+.navigation-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-links a:hover {
+  background-color: #f23580;
+  box-shadow:  0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;}
+
+.hero-content {
+ 
+  text-align: center;
+  color: #0ac7e7;
+  position: absolute;
+  font-size: 22px;
+ 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.hero-heading {
+  
+    color: #FFF;
+    font-family: 'Mulish', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1;
+    /* margin-bottom: -15px; */
+    margin-top: -200%;}
+
+.hero-subheading {
+  text-align: center;
+  color: #08c7e7;
+  font-family: 'Mulish', sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  margin-top: 36px;
+}
+
+.projectsintro {
+  font-size: 32px;
+  color: #F23580;
+margin-left: 47%;
+}
+ 
+ .text-box {
+  width: 826px;
+  background-color: white;
+  color: black;
+  margin-left: 20px;
+  padding: 20px; 
+  border-radius: 13px;
+  margin-bottom: 20px
+}
+
+  /* position: relative; */
+  /* width: 100%; */
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.arrow-container {
+position: absolute;
+top: 264%;
+right: 0;
+margin-top: 20px;
+margin-right: 142px;
+}
+.arrow-image {
+  width: 30px;
+  height: auto;
+}
+.col-md-4 {
+-ms-flex: 0 0 33.333333%;
+flex: 0 0 33.333333%;
+max-width: 28.333333%;
+/* margin-bottom: 10%; */
+background-color: white;
+color: black;
+padding: 19px;
+margin-left: 34px;
+border-radius: 13px;}
+
+.center-image img{
+  z-index: 1; 
+margin-top: -100px;
+margin-bottom: 10px
+;}
+
+/* Your existing CSS code here */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10%;
+}
+
+h3 {padding: 5%;
+color: ;}
+h4 {padding: 5%;
+  color:#000
+}
+
+.t2 {
+margin-right: 5%;
+margin-left: 5%;
+font-size: 14px;}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 5%;
+}
+
+.button {
+  display: inline-flex;
+  padding: 15.5px 24px 15.5px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 5%;
+  background-color: #f23580;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color:#00bff0;
+}
+
+.center-content{
+  align-items: flex-start; /* Align items to the top of the container */
+  padding: 20px;
+  margin-bottom: 10%;
+}
+.jewl-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Send it behind other content */
+}
+
+.jewl-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.center-content {
+  align-items: flex-start; /* Align items to the top of the container */
+  padding: 20px;
+  margin-bottom: 10%;
+  position: relative;
+}
+
+.center-content h4 {
+  font-size: 38px;
+  color: #F23580;
+}
+
+.smart-design {
+  background-color: #f5f5f5; /* Replace with your desired background color */
+  color: #333; /* Replace with your desired text color */
+ 
+}
+.contact-title-wrapper {
+  margin-top: -232px;
+  margin-left: 75px;
+}
+
+
+#about-section.col-md-6 {
+Flex: 0 0 0; 
+margin-left: 596px;
+}
+
+.left-image {border-radius: 13px;
+  box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;
+  width: 568px;
+  
+  margin-left: 116px;
+}
+  
+
+/* Styles for the image box */
+
+/* Styles for the flexbox */
+.image-wrapper {
+ 
+  width: 40%;
+  float: left;
+  margin-right: 30px; /* Add some spacing between the image and the grid */
+}
+
+/* Style for the image */
+
+
+.new-arrow-container {
+  position: absolute;
+  right: -150px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+/* CSS for the new arrow image (optional) */
+.new-arrow-image {
+  margin-top: -70px;
+  /* Add your styles here */
+}
+
+    /* padding-bottom: 10px; */
+.resume-section  {
+margin-bottom: 754px;
+margin-top: 180px;
+    /* background-color: #111; */
+    color: white;
+    position: relative;
+        padding: 0px;} 
+    /* background-color: #000; */
+
+/* Center the resume image horizontally */
+.image-section {
+  text-align: center;
+}
+
+#arrow-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 9999; /* Ensure the arrow is on top of other elements */
+}
+
+
+
+.h5 {
+  color: #F23580;
+  margin-left: 50%;
+  font-size: 32px;
+  padding-bottom: 46px;
+  position: relative;
+}
+
+
+/* Use ::before pseudo-element to add the border image as a background */
+.h5::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px; /* Adjust this value to adjust the position of the border image */
+  width: 60px; /* Adjust the width of the border image */
+  height: 100%;
+ 
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.h6, h6 {
+  margin-top: -10px; color: #F23580; font-size: 38px;
+}
+/* Rest of your CSS code... */
+
+/* Apply general styles to the form and its elements */
+body {
+  background-color: white;
+  color: black; /* Set the text color to black */
+}
+
+/* Apply general styles to the form and its elements */
+form {
+  margin-top: -500px;
+  width: 43%; /* Adjust the width as needed */
+  margin-left: 29%;/* Center the form horizontally within its container */
+  padding: 38px; /* Add padding to provide some spacing around the form elements */
+  background-color: white; /* Set the background color of the form to white */
+  border-radius: 5px;
+}
+
+.contact-title p{
+  color: #00BFF0;
+  font-family: Mulish;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 10px;
+  margin-left: -10px;
+  /* line-height: 53px; */
+}
+
+/* Adjust the size of the input fields */
+.form-control {
+  width: 100%; /* Set the input fields to take up 100% of the available width */
+  padding: 10px; /* Adjust the padding as needed */
+  color: black; /* Set the text color to black */
+}
+
+/* Adjust the size of the labels */
+.form-label {
+  font-size: 16px; /* Adjust the font size as needed */
+  color: black; /* Set the text color to black */
+}
+
+/* Adjust the size of the checkbox input */
+.form-check-input {
+  width: 20px; /* Adjust the width of the checkbox as needed */
+  height: 20px; /* Adjust the height of the checkbox as needed */
+  color: black; /* Set the text color to black */
+}
+
+/* Adjust the size of the checkbox label */
+.form-check-label {
+  font-size: 14px; /* Adjust the font size of the checkbox label as needed */
+  color: black; /* Set the text color to black */
+}
+
+/* Adjust the size of the submit button */
+.btn-primary {
+  font-size: 16px; /* Adjust the font size of the button as needed */
+  padding: 10px 20px; /* Adjust the padding of the button as needed */
+  color: black; /* Set the text color to black */
+}
+
+#exampleInputPassword1.form-control {
+  height: 160px;
+}
+
+/* Footer styles */
+.footer {padding-top: 10px;
+  background-color: #053b49;
+  color: white;
+  padding: 30px;
+  position: relative;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo img {
+  width: 70px; /* Adjust the width as needed */
+  height: auto;
+}
+
+.footer-navigation {
+  list-style: none;
+}
+
+.footer-navigation a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+@media (min-width: 800px) and (min-aspect-ratio: 1/1)  
+{
+  /* Top bar styles */
+
+
+}
+
+.center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -100px;
+  padding-top: 40px;
+}
+
+.center-image img {
+  width: 92%; /* Adjust the size as per your requirement */
+}
+
+/* Rest of the styles for this media query... */
+
+
+
+
+.boarder-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Send it behind other content */
+}
+
+.grid-item-topleft {
+  grid-column: 1;
+  border: 3px solid transparent;
+  border-image: url('./Outlineboarder.png') 3 round;
+  padding: 20px;
+  font-size: 14px;
+  position:relative;
+}
+
+
+.goidesktop img {
+     width: 50%;
+}
+  
+.grid-item-topright {
+  
+  grid-column: 2/ span 2;
+  border: 3px solid transparent;
+  border-image: url('./Outlineboarder.png') 3 round;
+  padding: 20px;
+   font-size: 14px;
+  margin-left: 22px;
+  position: relative;
+}
+.grid-item-topright img {
+  width: 100%
+
+}
+
+
+.grid-item-bottomcenter {
+  width: 380px;
+margin-left: 25%;
+margin-top: 100px;
+  grid-column: 1 / span 3;
+  border: 3px solid transparent;
+  border-image: url('./Outlineboarder.png') 3 round;
+  padding: 20px;
+  font-size: 14px;
+  position:relative;
+  background-color: #FFF;
+  color: #000;
+}
+.grid-item-bottomcenter img {
+  width:100%;
+ 
+}
+
+/* Additional styling for grid titles */
+.grid-title {
+  color: #f23580;
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 50px;
+  }
+
+ p[style="color: black;"] {
+  /* Add your styles here */
+  /* For example, you can set a different font size */
+  font-size: 14px;
+  color:#111;
+}
+p[style="color: black;"] t[style="font-size: 14px;"] {
+  /* Add your styles here */
+  /* For example, you can set a different font size */
+  font-size: 18px;
+}
+   
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .button {
+    display: inline-flex;
+    padding: 15.5px 24px 15.5px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #ff70a9;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #f54d8d;
+  }
+  .hero-image {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%; /* 16:9 aspect ratio (height/width) */
+  }
+  
+  .hero-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Additional styles for laptops with a screen size of 960x540 and above */
+  @media (min-width: 960px) and (min-height: 540px) {
+    .hero-heading {
+    color: #FFF;
+    font-family: 'Mulish', sans-serif;
+    font-size: 33px;
+    /* font-weight: 600; */
+    line-height: 0;
+    /* margin-bottom: -15px; */
+    margin-top: -229%;}
+
+    .left-image {
+      width: 321px;
+    }
+    .image-wrapper {
+      float: left;
+    }
+    
+    }
+  
+  
+
+
+/* Media query for devices with a minimum width of 320px and minimum device width of 480px */
+@media (min-width: 320px) and (min-device-width: 480px) {
+  /* Add your styles for this media query here */
+}

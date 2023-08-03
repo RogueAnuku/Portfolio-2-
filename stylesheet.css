@@ -106,7 +106,7 @@ body {
 .projectsintro {
   font-size: 32px;
   color: #F23580;
-margin-left: 47%;
+
 }
  
  .text-box {
@@ -127,13 +127,7 @@ margin-left: 47%;
     flex-wrap: wrap;
   }
 }
-.arrow-container {
-position: absolute;
-top: 943%;
-right: 0;
-margin-top: 20px;
-margin-right: 142px;
-}
+
 .arrow-image {
   width: 30px;
   height: auto;
@@ -322,12 +316,11 @@ body {
 
 /* Apply general styles to the form and its elements */
 form {
-  margin-top: -500px;
-  width: 43%; /* Adjust the width as needed */
-  margin-left: 29%;/* Center the form horizontally within its container */
+  
   padding: 38px; /* Add padding to provide some spacing around the form elements */
   background-color: white; /* Set the background color of the form to white */
-  border-radius: 5px;
+  border-radius: 20px;
+  margin: 10%;
 }
 
 .contact-title p{
@@ -380,10 +373,11 @@ form {
 
 /* Footer styles */
 .footer {padding-top: 10px;
+  width: 100%;
   background-color: #053b49;
   color: white;
   padding: 30px;
-  position: relative;
+  position: absolute;
 }
 
 .footer .container {
@@ -578,9 +572,8 @@ p[style="color: black;"] t[style="font-size: 14px;"] {
       margin-top: 37px;
     }
     
-    .logo img {
-      width: 58px;
-      height: 58px; /* Adjust the height as needed */
+    .top-bar-logo img{
+      width: 60px;
     }
     
     .name {
@@ -635,6 +628,9 @@ p[style="color: black;"] t[style="font-size: 14px;"] {
     .ui.navigation-links {
       width: 960px;
     }
+    .content-wrapper {
+      margin-bottom: 5%;
+    }
 
     #about-image {
       width: 288px;
@@ -657,14 +653,34 @@ p[style="color: black;"] t[style="font-size: 14px;"] {
     .h2, h2{
       font-size: 20px;
       font-weight: bold;
+      color: #F23580; 
+      margin-top: -50px;
+      margin-bottom: 80px;
+      text-align: center;
+ 
     }
     .h3,h3 {
       font-size: 20px;
       font-weight: bold;
      color: #F23580; 
+     margin-top: -50px;
+     margin-bottom: 80px;
+     text-align: center;
 
     }
-
+  .center-content h4 {
+    font-size: 30px;
+    text-align: center;
+    color: #F23580;
+  }
+.smart-design {
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 14px;
+}
+.smart-design img{
+  width: 100%;
+}
 }
 .col-md-2{   
  flex: 0 0 33.333333%;
@@ -686,14 +702,7 @@ text-align: center;
         color: #F23580;
         font-size: 20px;
         font-weight: bold;}
-  .mb-3
-  {
-    border-radius: 40px;
-    box-shadow: 0px 0px 5.4375px 0px #FFF, 0px 0px 10.875px 0px #FFF, 0px 0px 38.0625px 16px #FFF;
-width: 28%;
-margin-left: 5%;;
-  }
-  .col-md-6 {
+   .col-md-6 {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
  }
@@ -705,7 +714,7 @@ margin-left: 5%;;
   /* Vertically align the columns with vertical sections */
   .row {    display: flex;
     flex-wrap: wrap;
-    justify-content: right;
+    justify-content: center;
     }
 .resume-section {
   margin-bottom: 739px;
@@ -716,8 +725,29 @@ margin-left: 5%;;
 
 .h5, h5 {
   text-align: center;
+  color: #F23580;
+  margin-bottom: 5%;
 }
+.form {
+  width: 70%;
+  margin-left: 15%;
+  padding: 13px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 5%}
 
+  .contact-title-wrapper {
+  margin-top: -511px;}
+  /* margin-left: 75px; */
+  .arrow-container {
+  position: sticky;
+  margin-left: 97%;
+  top: 892%;
+  justify-content: right;}
+
+.footer {
+  margin-top: 5%;
+}
 /* max-width: 50%; */
 }
 /* Media query for devices with a minimum width of 320px and minimum device width of 480px */

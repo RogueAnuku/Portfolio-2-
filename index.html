@@ -50,16 +50,22 @@
 
 <header class="top-bar">
   <div class="container">
-    <div class="logo">
-      <img src="./IconOnly_Transparent_NoBuffer.png" alt="Logo"> 
-      <div class="name">Anika McPhee</div>
+    <div class="top-bar-logo">
+      <img src="./Logo.gif" alt="Footer Logo">
     </div>
+   
+    
+    
+    
+    
+    
+    
     <ul class="navigation-links">
       <li><a href="#">Home</a></li>
       <li><a class="nav-link-projects" href="#center-projects">Projects</a></li>
       <li><a href="#about-section">About</a></li>
-      <li><a href="#">Resume</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#resume-section">Resume</a></li>
+      <li><a href="#contact-section">Contact</a></li>
     </ul>
   </header>
 </div> 
@@ -94,7 +100,7 @@
       <div class="col-6 px-0" style="border: 3px solid transparent; border-image: url('./Outlineboarder.png') 3 round;">
         <!-- Column 1 Content -->
         <img src="./boarder.png" style="width: 102%;">
-        <h1.5>Revitalizing Compassion </h1.5>
+        <h2>Revitalizing Compassion </h2>
         <img src="./RogerNeilson.png" style="width: 100%;">
         <p2>  
           <t1 style="font-size: 14px;">The project proposes the redesign of Roger Neilson House's webpage, a palliative care facility in Ottawa. User research, including interviews and surveys, was conducted to gather insights. Competitor analysis highlighted strengths in accessibility standards, but weaknesses were found in certain websites. Heuristic evaluation identified issues with images, contact information, page length, and font size. User perspectives, actions, feelings, and pain points were considered. The problem statement focused on saving user information to streamline the volunteer application process. Sketches were created, and the site map was adjusted to include an 'About Us' section. A UI style guide was developed based on user preferences. Next steps included incorporating features, adding a contact form, and improving accessibility.</t>
@@ -210,37 +216,41 @@
       </div>
     </div>
   </div>
-  
-      <div class="resume-section">
+  <div class="resume-section" id="resume-section">
         <div class="resume-title-wrapper">
           <h5><t>Resume</t></h5>
           <div class="image-section">
             <img src="./resume.png" alt="Image">
           </div>
         </div>
-      </div>
-              
-      <div class="contact-title-wrapper">
-        <h5><t>Contact</t></h5>
+      
+   </div>
+        
+
+
+      <div class="contact-title-wrapper" id="contact-section">
+        <!-- Your contact section content goes here -->
      
-      </div>
-    <form>
-      <div class="contact-title" style="font-size: 32px;">
+      
+        <div class="contact-title-wrapper">
+        <h5><t>Contact</t></h5>
+          </div>
+        <form>
+        <div class="contact-title" style="font-size: 32px; color: #F23580;">
       
         <p> I'd love to share my work with you and answer any questions you may have. Leave your email and message and I'll get to you soon.</p>
           </div>
            <div class="mb-3">
              <label for="exampleInputEmail1" class="form-label">Email address</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
+               </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Message</label>
           <input type="password" class="form-control" id="exampleInputPassword1">
       </div>
            <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-   
+      </div>
    
       
         <footer class="footer">
@@ -258,117 +268,43 @@
           </div>
         </footer>
      
-        <script>
-          $(document).ready(function() {
-            // Add a click event listener to the arrow image
-            $(".arrow-image").on("click", function() {
-              // Scroll back to the top of the page with a smooth animation
-              $("html, body").animate({ scrollTop: 0 }, "slow");
-            });
         
-            
-        
-            // Add the click event listener for the new arrow element here
-            $(".arrow-image-new").on("click", function() {
-              // Scroll to the position of column 4 with a smooth animation
-              const column4Offset = $(".col-6").eq(3).offset().top;
-              $("html, body").animate({ scrollTop: column4Offset }, "slow");
-            });
-          });
-          </script>
+<script>
+   $(document).ready(function() {
+    // Smooth scroll to top when the arrow image is clicked
+    $(".arrow-image").on("click", function() {
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+    });
 
-      <script>
-        $(document).ready(function() {
-        $(".navigation-links li").hover(
-        function() {
-          $(this).find("a").css({
-        "font-size": "24px",  // Increase the font size on hover
-        "background-color": "#00bff0" // Change the background color on hover
-          }); },
-     function() {
-      $(this).find("a").css({
-        "font-size": "20px", // Restore the font size when not hovering
-        "background-color": "transparent" // Restore the background color when not hovering
-      });
-    }
-  );
-});
-</script>
-        </script>
-        <script>
-          $(document).ready(function() {
-            // Add a click event listener to the "Projects" link
-            $(".nav-link-projects").on("click", function(event) {
-              // Prevent the default link behavior (e.g., navigating to the href)
-              event.preventDefault();
-        
-              // Get the target element's offset from the top of the document
-              const targetOffset = $(".projectsintro").offset().top;
-        
-              // Scroll to the target element with a smooth animation
-              $("html, body").animate({ scrollTop: targetOffset }, "slow");
-            });
-          });
-        </script>
-      <script>
-        $(document).ready(function() {
-          // Add a click event listener to the "Projects" link
-          $("a.nav-link-projects").on("click", function(event) {
-            // Prevent the default link behavior (e.g., navigating to the href)
-            event.preventDefault();
-      
-            // Get the target element's offset from the top of the document
-            const targetOffset = $("#center-projects").offset().top;
-      
-            // Scroll to the target element with a smooth animation
-            $("html, body").animate({ scrollTop: targetOffset }, "slow");
-          });
-      
-          // Add a click event listener to the "About" link
-          $("a[href='#about']").on("click", function(event) {
-            // Prevent the default link behavior (e.g., navigating to the href)
-            event.preventDefault();
-      
-            // Get the target element's offset from the top of the document
-            const targetOffset = $("#about-image").offset().top;
-      
-            // Scroll to the target element with a smooth animation
-            $("html, body").animate({ scrollTop: targetOffset }, "slow");
-          });
-        });
-      </script>
-       
-       <script>
-        // Function to handle smooth scrolling when the "About" link is clicked
-        function scrollToAbout() {
-          const aboutSection = document.getElementById('about-section');
-          aboutSection.scrollIntoView({ behavior: 'smooth' });
-        }
-      
-        // Get the "About" link element
-        const aboutLink = document.querySelector('a[href="#about-section"]');
-      
-        // Add a click event listener to the "About" link
-        aboutLink.addEventListener('click', function(event) {
-          event.preventDefault(); // Prevent default link behavior
-          scrollToAbout(); // Call the scroll function when the link is clicked
-        });
-      </script>
-      
-       <script>
-  $(document).ready(function() {
-    // Add a click event listener to the "Resume" link
-    $("ul.navigation-links li a[href='#']").on("click", function(event) {
-      // Prevent the default link behavior (e.g., navigating to the href)
+    // Smooth scroll to projects section when "Projects" link is clicked
+    $("a.nav-link-projects").on("click", function(event) {
       event.preventDefault();
-
-      // Get the target element's offset from the top of the document
-      const targetOffset = $(".resume-section").offset().top;
-
-      // Scroll to the target element with a smooth animation
+      const targetOffset = $(".projectsintro").offset().top;
       $("html, body").animate({ scrollTop: targetOffset }, "slow");
     });
+
+    // Smooth scroll to about section when "About" link is clicked
+    $("a[href='#about-section']").on("click", function(event) {
+      event.preventDefault();
+      const targetOffset = $("#about-section").offset().top;
+      $("html, body").animate({ scrollTop: targetOffset }, "slow");
+    });
+
+    // Smooth scroll to resume section when "Resume" link is clicked
+    $("a[href='#resume-section']").on("click", function(event) {
+      event.preventDefault();
+      const targetOffset = $("#resume-section").offset().top;
+      $("html, body").animate({ scrollTop: targetOffset }, "slow");
+    });
+
+    // Smooth scroll to contact section when "Contact" link is clicked
+    $("a[href='#contact-section']").on("click", function(event) {
+      event.preventDefault();
+      const targetOffset = $("#contact-section").offset().top;
+      $("html, body").animate({ scrollTop: targetOffset }, "slow")  });
   });
-</script>  
+</script>
+  
+
 </div>
 </div>
